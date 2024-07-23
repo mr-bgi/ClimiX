@@ -18,11 +18,9 @@ function scrollFunction() {
 document.addEventListener('DOMContentLoaded', function () {
     var collapseElement = document.getElementById('searchSM');
     var elementToShow = document.getElementById('logo');
-
     collapseElement.addEventListener('show.bs.collapse', function () {
         elementToShow.style.display = 'none';
     });
-
     collapseElement.addEventListener('hide.bs.collapse', function () {
         elementToShow.style.display = 'block';
     });

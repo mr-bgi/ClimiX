@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
@@ -16,7 +17,58 @@
                 <a class="navbar-brand" id="logo" href="#">
                     <img src="assets/img/logo/logo.png" alt="">
                 </a>
-                <div class="d-flex gap-3">
+                <a href="#" class="land-modal d-md-none" role="button" data-bs-toggle="modal" data-bs-target="#landing">
+                    <img src="assets/img/icon/user.png" class="w-100 object-fit-cover" alt="">
+                </a>
+                <div class="modal fade" id="landing" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 d-flex justify-content-start">
+                                <a href="#" class="close-btn text-success" data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-arrow-left fs-3"></i>
+                                </a>
+                            </div>
+                            <div class="modal-body pb-5">
+                                <a href="#" class="modal-header-img">
+                                    <img src="assets/img/logo/logo.png" class="w-100 object-fit-cover" alt="">
+                                </a>
+                                <h4 class="py-3 px-2">ចូលគណនី</h4>
+                                <form action="" method="get" class="mb-5">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" name="formId1" id="formId1"
+                                            placeholder="Email">
+                                        <label for="formId1">អ៊ីម៉ែល</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="formId1" id="formId1"
+                                            placeholder="Email"/>
+                                        <label for="formId1">ឈ្មោះ</label>
+                                        <a href="forget-password.html" class="text-decoration-none text-black">
+                                            <p class="text-end mt-1 pe-2">ភ្លេចពាក្យសម្ងាត់</p>
+                                        </a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 py-2">ចូលគណនី</button>
+                                </form>
+                                <p class="text-center">-- ចូលគណនីតាម --</p>
+                                <div class="group-signin-icon d-flex justify-content-center gap-4">
+                                    <a  href="#" class="sign-icon">
+                                        <img src="assets/img/icon/google-color.png" alt="">
+                                    </a>
+                                    <a  href="#" class="sign-icon">
+                                        <img src="assets/img/icon/facebook-color.png" alt="">
+                                    </a>
+                                    <a  href="#" class="sign-icon">
+                                        <img src="assets/img/icon/twitter-color.png" alt="">
+                                    </a>
+                                </div>
+                                <a href="sign-up.html" class="text-decoration-none" role="button" data-bs-target="">
+                                    <p class="text-center mt-5"><span class="text-black">មិនទាន់មានគណនី? </span> បង្កើតគណនី <span class="text-black"></span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap-3 d-none d-md-flex">
                     <a role="button" href="sign-up.html" class="btn btn-warning text-white px-4">ចុះឈ្មោះ</a>
                     <a role="button" href="sign-in.html" class="btn btn-success px-4">ចូលគណនី</a>
                 </div>

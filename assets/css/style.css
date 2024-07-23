@@ -10,7 +10,7 @@
 }
 body{
     font-family: 'Kantumruy Pro', sans-serif;
-    background-color: #ddd;
+    background-color: var(--color-body);
 }
 :root{
     --filter-green: invert(38%) sepia(54%) saturate(465%) hue-rotate(106deg) brightness(88%) contrast(88%);
@@ -18,6 +18,32 @@ body{
     --color-blueGreen: #21B6A8;
     --color-neonGreen: #A3EBB1;
     --color-kellyGreen: #18A558;
+    --color-body: #f3f5f8;
+}
+header .modal-content{
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.92) !important;
+}
+header .land-modal{
+    width: 25px;
+    height: 25px;
+}
+header .land-modal img{
+    filter: var(--filter-green);
+}
+header .modal-header-img{
+    width: 100px !important;
+}
+header .modal-header-img img{
+    transform: scale(0.8);
+}
+header .group-signin-icon .sign-icon{
+    width: 30px !important;
+    height: 30px;
+}
+header .group-signin-icon .sign-icon img{
+    width: 30px;
+    height: 30px;
 }
 header .navbar-brand{
     max-width: 150px;
