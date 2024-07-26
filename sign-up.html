@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="sign-up-form">
+        <div class="container-lg h-100 d-flex justify-content-center align-items-center">
+            <div class="card border-0 p-0 overflow-hidden py-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-0 order-0 order-md-1">
+                        <div
+                            class="sign-bg w-100 h-100 px-3 d-flex flex-column gap-4 justify-content-center align-items-center position-relative">
+                            <a href="sign-in.html" class="px-4 back-to-sign-btn">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <div class="sign-prop d-none d-md-block">
+                                <img src="assets/img/background/sign-prop.png" alt="">
+                            </div>
+                            <div class="sign-prop-1 d-none d-md-block">
+                                <img src="assets/img/background/sign-prop-1.png" alt="">
+                            </div>
+                            <div class="sign-logo">
+                                <img src="assets/img/logo/logo.png" class="w-100 object-fit-cover" alt="">
+                            </div>
+                            <h2 class="text-center sign-quote  d-md-block">"កម្ពុជា រួមគ្នាដើម្បីនិរន្តរភាពនៃភពផែនដី"
+                            </h2>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 ps-5 d-flex order-1 order-md-2 justify-content-center align-content-center h-100 pe-5 sign-right">
+                        <form action="" method="post" class="w-100 h-100 py-4 pe-0 needs-validation" novalidate>
+                            <h4 class="text-center text-black pb-3">បង្កើតគណនីរបស់អ្នក</h4>
+
+                            <div class="form-floating form-floating-custom mb-4">
+                                <input type="text" class="form-control" name="username" id="username"
+                                    placeholder="ឈ្មោះ" required />
+                                <label for="username">ឈ្មោះ</label>
+                                <div class="invalid-feedback">
+                                    សូមបញ្ចូលឈ្មោះរបស់អ្នក
+                                </div>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="form-floating form-floating-custom mb-4">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="អ៊ីម៉ែល"
+                                    required />
+                                <label for="email">អ៊ីម៉ែល</label>
+                                <div class="invalid-feedback">
+                                    សូមបញ្ចូលអាស័យដ្ឋាន email
+                                </div>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="form-floating form-floating-custom mb-4">
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="ពាក្យសម្ងាត់" required />
+                                <label for="password">ពាក្យសម្ងាត់</label>
+                                <div class="invalid-feedback">
+                                    សូមបញ្ចូលពាក្យសម្ងាត់
+                                </div>
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+
+                            <div class="form-floating form-floating-custom mb-4">
+                                <input type="password" class="form-control" name="confirm_password"
+                                    id="confirm_password" placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required />
+                                <label for="confirm_password">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                                <div class="invalid-feedback">
+                                    សូមផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="terms" required />
+                                <label class="form-check-label" for="terms">I agree with the <a href="">Terms of Condition</a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 my-3">បង្កើតគណនី</button>
+                            <p class="text-center">មានគណនីរួចហើយ? <a href="#" class="text-light text-decoration-none">ចូលគណនី</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

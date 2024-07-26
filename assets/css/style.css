@@ -12,6 +12,9 @@ body{
     font-family: 'Kantumruy Pro', sans-serif;
     background-color: var(--color-body);
 }
+main{
+    height: 200vh;
+}
 :root{
     --filter-green: invert(38%) sepia(54%) saturate(465%) hue-rotate(106deg) brightness(88%) contrast(88%);
     --color-green: #116530;
@@ -19,6 +22,7 @@ body{
     --color-neonGreen: #A3EBB1;
     --color-kellyGreen: #18A558;
     --color-body: #f3f5f8;
+    --color-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.106);
 }
 header .modal-content{
     backdrop-filter: blur(5px);
@@ -36,6 +40,10 @@ header .modal-header-img{
 }
 header .modal-header-img img{
     transform: scale(0.8);
+}
+header .modal-content .form-control:focus{
+    box-shadow: none;
+    border-color: var(--color-blueGreen);
 }
 header .group-signin-icon .sign-icon{
     width: 30px !important;
@@ -156,8 +164,106 @@ header .search-lg .form-control{
     transform: translateY(55px);
     /* transition: 0.3s; */
 }
-main{
-    height: 200vh;
+.sign-up-form{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/background/tmp1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sign-up-form a{
+    color: var(--color-green);
+    /* font-weight: bold; */
+}
+.sign-up-form .card{
+    box-shadow: var(--color-shadow);
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.119);
+    backdrop-filter: blur(2px);
+    width: 900px; 
+}
+.sign-up-form .card .back-to-sign-btn{
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #116530;
+}
+.sign-up-form .sign-bg .sign-quote{
+    line-height: 50px;
+}
+.sign-up-form .card .sign-bg-img{
+    width: 40%;
+    height: 100%;
+}
+.sign-up-form .card .row .sign-bg .sign-prop, .sign-prop-1{
+    position: absolute;
+    z-index: 100;
+}
+.sign-up-form .card .row .sign-bg .sign-prop{
+    transform: scale(0.5);
+    left: -120px;
+    top: -110px;
+}
+.sign-up-form .card .row .sign-bg .sign-prop-1{
+    top: 175px;
+    left: -130px;
+    transform: scale(0.35);
+}
+.sign-logo{
+    width: 200px;
+}
+.sign-up-form .card .sign-bg{
+    border-right: 2px solid green;
+}
+.sign-up-form .card form{
+    height: 100%;
+}               
+.sign-up-form .card .form-control{
+    height: 55px;
+    min-height: 30px !important;
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid green;
+}
+.sign-up-form .card .form-floating label{
+    font-size: 14px;
+}
+.sign-up-form .card .form-floating {
+    z-index: 0;
+}
+.sign-up-form .card .form-floating .form-control:focus{
+    box-shadow: none;
+}
+.was-validated .form-control:invalid, .was-validated .form-check-input:invalid {
+    background-image: none;
+}
+.sign-up-form .card .form-floating i{
+    position: absolute;
+    color: var(--color-green);
+    z-index: 100;
+    font-size: 20px !important;
+    right: 15px;
+    top: 10px;
+}
+.sign-up-form .form-floating > label{
+    top: -10px;
+    left: -5px;    
+}
+.form-floating-custom .form-control {
+    height: 40px !important; /* Adjust height as needed */
+    padding: 5px 10px; /* Adjust padding to vertically center text */
+
+}
+
+.form-floating-custom .form-control:focus{
+    background: transparent!important;}
+.sign-up-form .card .form-check-label{
+    font-size: 14px;
+    text-align: center;
 }
 footer{
     max-width: 100%;
