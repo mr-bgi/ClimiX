@@ -12,16 +12,21 @@
 
 <body>
     <section class="sign-up d-none d-lg-flex align-items-center justify-content-center">
-        <div class="container-md d-flex justify-content-center">
+        <div class="container-md d-flex justify-content-center position-relative">
+            <div class="sign-girl-prop position-absolute">
+                <img src="assets/img/prop/girl.png" alt="" class=" h-100 object-fit-cover">
+            </div>
             <div class="sign-form-wrapper rounded-4 overflow-hidden">
                 <div class="row h-100 g-0">
-                    <div class="col-12 col-md-6 bg-white">
-                        <div class="sign-decoration bg-sign h-100 position-relative">
-
+                    <div class="col-12 col-md-6">
+                        <div class="sign-decoration h-100 position-relative">
+                             <div class="sign-message-box position-absolute">
+                                  <img src="assets/img/prop/message.png" class="w-100 object-fit-cover" alt="">
+                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 bg-piece">
-                        <div class="sign-form bg-white h-100 position-relative p-5">
+                        <div class="sign-form h-100 position-relative p-5">
                             <div class="sign-form-header d-flex justify-content-between mb-3">
                                 <a href="index.html">
                                     <div class="img-icon">
@@ -34,7 +39,7 @@
                                     <div class="sign-logo  ms-auto me-auto mb-3">
                                         <img src="assets/img/logo/logo.png" class="w-100" alt="">
                                     </div>
-                                    <form action="" method="get" class="needs-validation" novalidate>
+                                    <form action="sign-in.html" method="get" class="needs-validation" novalidate>
                                         <div class="mb-3 position-relative">
                                             <input type="text" class="form-control" name="" id="" placeholder="ឈ្មោះ"
                                                 required />
@@ -106,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="sign-up-lg bg-sign d-lg-none">
+    <section class="sign-up-lg d-lg-none">
         <div class="container-md">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between px-3 py-4">
@@ -129,13 +134,13 @@
                 </div>
                 <div class="col-12">
                     <div class="sign-form-bottom d-flex flex-column align-items-center justify-content-center px-3">
-                        <button class="btn btn-outline-primary mb-3 position-relative">
+                        <button class="btn btn-outline-primary mb-3 position-relative" onclick="location.href='homepage.html'">
                             <div class="sign-form-bottom-icon position-absolute">
                                 <img src="assets/img/icon/facebook-color.png" class="w-100 object-fit-cover" alt="">
                             </div>
                             <span class="text-white text-center">បន្តជាមួយ Facebook</span>
                         </button>
-                        <button class="btn btn-outline-primary mb-3 position-relative">
+                        <button class="btn btn-outline-primary mb-3 position-relative" onclick="location.href='homepage.html'">
                             <div class="sign-form-bottom-icon position-absolute">
                                 <img src="assets/img/icon/google-color.png" class="w-100 object-fit-cover" alt="">
                             </div>
@@ -158,7 +163,7 @@
             <h4 class="offcanvas-title ms-auto me-auto fw-semibold" id="offcanvasBottomLabel">បង្កើតគណនី</h4>
         </div>
         <div class="offcanvas-body small">
-            <form action="" class="needs-validation" novalidate>
+            <form action="sign-in.html" class="needs-validation" novalidate>
                 <div class="mb-3 position-relative">
                     <input type="text" class="form-control" name="" id="" placeholder="ឈ្មោះ" required />
                     <div class="sign-icon">
@@ -194,17 +199,17 @@
             </form>
             <p class="text-center w-100 m-0 my-3">-- ចូលគណនី --</p>
             <div class="d-flex justify-content-center w-100 gap-3">
-                <a href="#">
+                <a href="homepage.html">
                     <div class="img-icon">
                         <img src="assets/img/icon/google-color.png" alt="">
                     </div>
                 </a>
-                <a href="#">
+                <a href="homepage.html">
                     <div class="img-icon">
                         <img src="assets/img/icon/facebook-color.png" alt="">
                     </div>
                 </a>
-                <a href="#">
+                <a href="homepage.html">
                     <div class="img-icon">
                         <img src="assets/img/icon/twitter-color.png" alt="">
                     </div>

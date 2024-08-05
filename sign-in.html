@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>បង្កើតគណនី</title>
+    <title>ចូលគណនី</title>
 </head>
 
 <body>
     <section class="sign-up d-none d-lg-flex align-items-center justify-content-center">
-        <div class="container-md d-flex justify-content-center">
+        <div class="container-md d-flex justify-content-center position-relative">
+            <div class="sign-girl-prop position-absolute">
+                <img src="assets/img/prop/girl.png" alt="" class=" h-100 object-fit-cover">
+            </div>
             <div class="sign-form-wrapper rounded-4 overflow-hidden">
                 <div class="row h-100 g-0">
-                    <div class="col-12 col-md-6 bg-white">
-                        <div class="sign-decoration bg-sign h-100 position-relative">
-
+                    <div class="col-12 col-md-6">
+                        <div class="sign-decoration h-100 position-relative">
+                            <div class="sign-message-box position-absolute">
+                                <img src="assets/img/prop/message.png" class="w-100 object-fit-cover" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 bg-piece">
-                        <div class="sign-form bg-white h-100 position-relative p-5">
+                        <div class="sign-form h-100 position-relative p-5">
                             <div class="sign-form-header d-flex justify-content-between mb-3">
                                 <a href="index.html">
                                     <div class="img-icon">
@@ -31,17 +36,10 @@
                             </div>
                             <div class="sign-form-body d-flex justify-content-center">
                                 <div class="sign-form-body-content rounded-4 d-flex flex-column py-3 px-4">
-                                    <div class="sign-logo  ms-auto me-auto mb-3">
+                                    <div class="sign-logo  ms-auto me-auto mb-5">
                                         <img src="assets/img/logo/logo.png" class="w-100" alt="">
                                     </div>
-                                    <form action="" method="get" class="needs-validation" novalidate>
-                                        <div class="mb-3 position-relative">
-                                            <input type="text" class="form-control" name="" id="" placeholder="ឈ្មោះ"
-                                                required />
-                                            <div class="sign-icon">
-                                                <img src="assets/img/icon/profile.png" class="w-100" alt="">
-                                            </div>
-                                        </div>
+                                    <form action="homepage.html" method="get" class="needs-validation" novalidate>
                                         <div class="mb-3 position-relative">
                                             <input type="email" class="form-control" name="" id="" placeholder="អ៊ីម៉ែល"
                                                 required />
@@ -55,49 +53,41 @@
                                             <div class="sign-icon">
                                                 <img src="assets/img/icon/padlock.png" class="w-100" alt="">
                                             </div>
-                                        </div>
-                                        <div class="mb-3 position-relative">
-                                            <input type="password" class="form-control" name="" id=""
-                                                placeholder="ផ្ទៀងផ្ទាត់លេខសម្ងាត់" required />
-                                            <div class="sign-icon">
-                                                <img src="assets/img/icon/verified.png" class="w-100" alt="">
-                                            </div>
+                                            <a href="#">
+                                                <p class="float-end mt-1">ភ្លេចលេខសម្ងាត់?</p>
+                                            </a>
                                         </div>
                                         <div class="form-check mt-2">
                                             <input class="form-check-input" type="checkbox" value="" id="" required />
-                                            <label class="form-check-label" for="">ខ្ញុំបានអាននិងយល់ព្រមលើ <a href="#">
-                                                    គោលការណ៍ឯកជនភាព
-                                                </a></label>
+                                            <label class="form-check-label" for="">ចងចាំខ្ញុំ</label>
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary w-100 mt-3">បង្កើតគណនី</button>
+                                        <button type="submit" class="btn btn-primary w-100 mt-3">ចូលគណនី</button>
                                     </form>
-                                    <p class="text-center mt-3">មានគណនីរួចហើយ?
-                                        <a href="sign-in.html" class="text-decoration-none">ចូលគណនី</a>
+                                    <p class="text-center mt-3">មិនទាន់មានគណនី?
+                                        <a href="sign-up.html" class="text-decoration-none">បង្កើតគណនី</a>
                                     </p>
-
-                                </div>
-                            </div>
-                            <div class="sign-form-footer mt-3 ">
-                                <div class="d-flex justify-content-center gap-4">
-                                    <a href="#">
-                                        <div class="sign-media-icon">
-                                            <img src="assets/img/icon/google-color.png" class="w-100 object-fit-cover"
-                                                alt="">
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="sign-media-icon">
-                                            <img src="assets/img/icon/facebook-color.png" class="w-100 object-fit-cover"
-                                                alt="">
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="sign-media-icon">
-                                            <img src="assets/img/icon/twitter-color.png" class="w-100 object-fit-cover"
-                                                alt="">
-                                        </div>
-                                    </a>
+                                    <p class="text-center mt-0">-- ចូលគណនី --</p>
+                                    <div class="d-flex justify-content-center gap-4">
+                                        <a href="#">
+                                            <div class="sign-media-icon">
+                                                <img src="assets/img/icon/google-color.png"
+                                                    class="w-100 object-fit-cover" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sign-media-icon">
+                                                <img src="assets/img/icon/facebook-color.png"
+                                                    class="w-100 object-fit-cover" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sign-media-icon">
+                                                <img src="assets/img/icon/twitter-color.png"
+                                                    class="w-100 object-fit-cover" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -129,21 +119,24 @@
                 </div>
                 <div class="col-12">
                     <div class="sign-form-bottom d-flex flex-column align-items-center justify-content-center px-3">
-                        <form action="" method="get" class="needs-validate w-100" novalidate>
+                        <form action="homepage.html" method="get" class="needs-validation w-100" novalidate>
                             <div class="mb-3 position-relative">
-                                <input type="email" class="form-control" name="" id="" placeholder="អ៊ីម៉ែល" required />
+                                <input type="email" class="form-control rounded-4" name="" id="" placeholder="អ៊ីម៉ែល"
+                                    required />
                                 <div class="sign-icon">
                                     <img src="assets/img/icon/mail.png" class="w-100" alt="">
                                 </div>
                             </div>
                             <div class="mb-3 position-relative">
-                                <input type="password" class="form-control" name="" id="" placeholder="លេខសម្ងាត់"
-                                    required />
-                                    <div class="sign-icon">
-                                        <img src="assets/img/icon/padlock.png" class="w-100" alt="">
-                                    </div>
+                                <input type="password" class="form-control rounded-4" name="" id=""
+                                    placeholder="លេខសម្ងាត់" required />
+                                <div class="sign-icon">
+                                    <img src="assets/img/icon/padlock.png" class="w-100" alt="">
+                                </div>
+                                <a href="#" class="text-decoration-none float-end mt-3 pe-3"><span
+                                        class="text-white ms-auto">ភ្លេចលេខសម្ងាត់?</span></a>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">បង្កើតគណនី</button>
+                            <button type="submit" class="btn btn-primary btn-sign w-100 mt-4">ចូលគណនី</button>
                         </form>
                     </div>
                     <p class="text-white text-center mt-4 another-opt">មិនទាន់មានគណនី?
