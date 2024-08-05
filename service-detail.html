@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Homepage</title>
+    <style>
+
+    .service-detail .sidebar .nav-pills .nav-link {
+        color: black;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .service-detail .sidebar .nav-pills .nav-link.active {
+        color: white;
+        background-color: red !important;
+    }
+
+    .service-detail .content .intro {
+        position: relative;
+        color: red;
+        font-weight: 500;
+    }
+
+    .service-detail .content .intro::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        width: 115px;
+        height: 1.5px;
+        background-color: red;
+    }
+
+    .service-detail .content .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .service-detail .content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .service-detail .content .item ul li {
+        font-size: 18px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 14px;
+    }
+
+    .service-detail .content .list-item ul li {
+        border-top: 1px solid #ddd !important;
+        padding: 14px;
+    }
+
+    .service-detail .content .card {
+        position: relative;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .service-detail .content .card::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: green;
+        position: absolute;
+    }
+
+    .service-detail .content .card .card-header .badge {
+        position: absolute;
+        top: -33px;
+    }
+
+    .service-detail .content .card .card-header .badge i {
+        background-color: green;
+    }
+
+    .service-detail .content .about-us .nav-pills .nav-link {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .service-detail .content .about-us .nav-pills .nav-link.active {
+        background-color: red;
+        color: white;
+    }
+
+    .service-detail .content .about-us .tab-content .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top flex-nowrap" id="headbar">
+            <div class="container-lg">
+                <a class="navbar-brand order-0 me-0 d-lg-block" href="homepage.html" id="logo">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </a>
+                <form action="" method="get" class="collapse collapse-horizontal search-sm me-3" id="searchSM">
+                    <input type="text" name="search" class="form-control d-lg-none ps-5" placeholder="ស្វែងរក...">
+                </form>
+                <div class="head-group-item d-flex justify-content-between order-2">
+                    <button class="navbar-toggler order-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <img src="assets/img/icon/menu.png" class="w-100 object-fit-cover" alt="">
+                    </button>
+                    <div class="head-item d-flex align-items-center justify-content-end gap-3 order-1">
+                        <ol class="breadcrumb pt-3 d-none d-lg-flex">
+                            <li class="breadcrumb-item">ខ្មែរ</li>
+                            <li class="breadcrumb-item">En</li>
+                        </ol>
+                        <a href="#" class="text-success fs-5 d-lg-none" data-bs-toggle="collapse" data-bs-target="#searchSM">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-success fs-5 d-none d-lg-block" data-bs-toggle="collapse" data-bs-target="#searchBar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-success fs-5 d-none d-lg-block">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <div class="header-profile bg-success rounded-circle dropdown d-none d-lg-block" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://i.pinimg.com/236x/03/eb/d6/03ebd625cc0b9d636256ecc44c0ea324.jpg"
+                                class="w-100 h-100 object-fit-cover ">
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/user-gear.png" alt="">
+                                        </div>
+                                        <span>ការកំណត់</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/box.png" alt="">
+                                        </div>
+                                        <span>ចាកចេញ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/plant.png" alt="">
+                                        </div>
+                                        <span>រុក្ខជាតិ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/power.png" alt="">
+                                        </div>
+                                        <span>ចាកចេញ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <div class="profile-offCanvas d-flex align-items-center justify-content-center gap-3">
+                            <div class="profile-offCanva-img">
+                                <img src="https://i.pinimg.com/236x/03/eb/d6/03ebd625cc0b9d636256ecc44c0ea324.jpg"
+                                    alt="">
+                            </div>
+                            <a href="edit-profile.html" class="profile-offCanva-name text-decoration-none text-black">
+                                <h3 class="p-0">សារ័ត្ន តុលា</h3>
+                            </a>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link fs-head active" aria-current="page" href="#">ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head " href="product-main.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ផលិតផល
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/construction.png" alt="">
+                                            </div>
+                                            <span>សម្ភារៈសំណង់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/plant.png" alt="">
+                                            </div>
+                                            <span>រុក្ខជាតិ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/box.png" alt="">
+                                            </div>
+                                            <span>ផលិតផលនិរន្តរភាព</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/recycle.png" alt="">
+                                            </div>
+                                            <span>សម្ភារៈកែច្នៃ</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" href="service-main.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    សេវាកម្ម
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/planting.png" alt="">
+                                            </div>
+                                            <span>លម្អរុក្ខជាតិ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/recycle.png" alt="">
+                                            </div>
+                                            <span>រោងចក្រកែច្នៃ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/dumpster.png" alt="">
+                                            </div>
+                                            <span>ប្រមូលកាកសំណល់</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ប្រភព
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/eduction.png" alt="">
+                                            </div>
+                                            <span>ចំណេះដឹង</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/land-location.png" alt="">
+                                            </div>
+                                            <span>ផែនទី</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/blog-text.png" alt="">
+                                            </div>
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    សហគមន៍
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/donate.png" alt="">
+                                            </div>
+                                            <span>គាំទ្រសកម្មភាព</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/competition.png" alt="">
+                                            </div>
+                                            <span>កម្មវិធីប្រកួតប្រជែង</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-head" href="contact-us.html">ទំនាក់ទំនង</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-head" href="about-us.html">អំពីខ្ញុំ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-footer py-4 px-3 d-flex gap-4 justify-content-center d-lg-none">
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/facebook.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/telegram.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/whatsapp.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-lg collapse w-100 position-absolute top-0" id="searchBar">
+                <div
+                    class="card card-body d-flex flex-row align-items-end justify-content-center border-0 bg-transparent ">
+                    <form>
+                        <input type="text" class="form-control" name="" id="search" placeholder="ស្វែងរក" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-baner vh-100">
+            <!-- <img src="assets/img/logo/logo.png" alt=""> -->
+        </div>
+
+        <section class="service-detail bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="sidebar">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">Waste Removal</button>
+                                <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">Dumpster Rentals</button>
+                                <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">On-Demand Collection</button>
+                                <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">Zero Waste</button>
+                                <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">Techonology</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab" tabindex="0">
+                                <div class="content">
+                                    <span class="intro d-block p-0 mb-3">INTRODUCTION</span>
+                                    <h1>Waste Removal Services</h1>
+                                    <div class="image my-5">
+                                        <img src="https://st.ourhtmldemo.com/new/Wastey/assets/images/services/service-d-1-1.png" alt="">
+                                    </div>
+                                    <p class="mb-3">
+                                        On the other hand, we denounce with righteous indignation dislike men who are so beguiled demoralized by the charms of pleasures of the moment, so blinded by desire that they cannot foresee the pain trouble that are bound to ensue and equal blame belongs to those who fail in their duty.
+                                    </p>
+                                    <h3 class="mb-3">
+                                        Our Reliable Services Includes
+                                    </h3>
+                                    <p>
+                                        The charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain & trouble that are bound to ensue; and equal blame belongs to those who fail in their duty.
+                                    </p>
+                                    <div class="row item my-4">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <ul class="fw-semibold">
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Recurring Waste & Recycling</li>
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Sustainability Education</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <ul class="fw-semibold">
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Waste Diversion Reporting</li>
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>24/7 customer service</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">Materials We Collected</h3>
+                                    <p>
+                                        Blinded by desire, that they cannot foresee the pain & trouble that are bound to ensue;
+                                    </p>
+                                    <div class="row row-gap-5 my-5">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="list-item">
+                                                <div class="card border-0">
+                                                    <div class="card-header bg-transparent border-0 p-4 pt-5 pb-0">
+                                                        <div class="badge">
+                                                            <i class="fa-solid fa-recycle text-white display-5 p-2 rounded-circle"></i>
+                                                        </div>
+                                                        <h4>Solid Waste</h4>
+                                                        <p>Converted into liquid form for disposal</p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Garbage
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Waste Tires
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furniture and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Scrap Metal
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furnitrure and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Appliances & Vehicles
+                                                            </li>
+                                                            <a href="#" class="btn fw-semibold fs-5" role="button">... More</a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="list-item">
+                                                <div class="card border-0">
+                                                    <div class="card-header bg-transparent border-0 p-4 pt-5 pb-0">
+                                                        <div class="badge">
+                                                            <i class="fa-solid fa-recycle text-white display-5 p-2 rounded-circle"></i>
+                                                        </div>
+                                                        <h4>Solid Waste</h4>
+                                                        <p>Converted into liquid form for disposal</p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Garbage
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Waste Tires
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furniture and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Scrap Metal
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furnitrure and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Appliances & Vehicles
+                                                            </li>
+                                                            <a href="#" class="btn fw-semibold fs-5" role="button">... More</a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="my-5">When You Refuse To Reuse It's Our Earth.</h3>
+                                    <div class="about-us">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row g-0">
+                                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active" id="pills-mission-tab" data-bs-toggle="pill" data-bs-target="#pills-mission" type="button" role="tab" aria-controls="pills-mission" aria-selected="true">Our Mission</button>
+                                                              </li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-vision-tab" data-bs-toggle="pill" data-bs-target="#pills-vision" type="button" role="tab" aria-controls="pills-vision" aria-selected="false">Our Vision</button>
+                                                              </li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">Our History</button>
+                                                              </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content py-4" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission-tab" tabindex="0">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <h4>Recyling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab" tabindex="0">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h4>Recyling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab" tabindex="0">
+                                                 <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <h4>Recycling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab" tabindex="0">...</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-menu pt-5">
+            <div class="container-fluid container-md">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-6 p-0 d-flex align-items-center align-items-lg-start flex-column border-footer">
+                        <div class="footer-menu-img">
+                            <img src="assets/img/logo/logo.png" class="w-100 object-fit-cover" alt="">
+                        </div>
+                        <div
+                            class=" d-flex flex-wrap align-content-center justify-content-center justify-content-lg-start">
+                            <p class="footer-decrition py-2 text-center text-lg-start w-100">
+                                "កម្ពុជា រួមគ្នាដើម្បីនិរន្តរភាពនៃភពផែនដី"
+                            </p>
+                            <div class="footer-email px-4 py-4 d-md-flex gap-5 mb-5 mb-lg-0">
+                                <a href="#" class="d-flex text-decoration-none text-white gap-2 border-footer pe-5">
+                                    <div class="footer-icon">
+                                        <img src="assets/img/icon/envelope.png" class="w-100 object-fit-cover" alt="">
+                                    </div>
+                                    <span>ClimiX24@gmail.com</span>
+                                </a>
+                                <a href="#" class="d-flex text-decoration-none text-white gap-2">
+                                    <div class="footer-icon">
+                                        <img src="assets/img/icon/phone-call.png" class="w-100 object-fit-cover" alt="">
+                                    </div>
+                                    <span>+855 988 3924</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group-footer-icon d-flex gap-3">
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/facebook.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/instagram.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/telegram.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/twitter.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/whatsapp.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12  col-lg-6 d-flex gap-4 justify-content-center justify-content-lg-center flex-wrap p-0">
+                        <div class="d-flex gap-4 justify-content-start">
+                            <ul class="list-unstyled">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>តំណភ្ជាប់</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">កន្ត្រក</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">FAQ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">សហគមន៍</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ទំនាក់ទំនង</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">អំពីយើង</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <div class="menu-head d-flex gap-2 align-items-center justify-content-end">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>ផលិតផល</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">សម្ភារៈសំណង់</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">រុក្ខជាតិ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ផលិតផលនិរន្តរភាព</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">សម្ភារៈកែច្នៃ</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-5 justify-content-start">
+                            <ul class="list-unstyled d-lg-block">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>ប្រភព</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">ចំណេះដឹង</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ផែនទី</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">Blog</a></li>
+                            </ul>
+                            <ul class="list-unstyled  d-lg-block">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>សេវាកម្ម</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">លម្អរុក្ខជាតិ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">រោងចក្រកែច្នៃ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ប្រមូលកាកសំណល់</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-3 w-100 d-flex flex-column justify-content-center align-items-center">
+                            <label for="" class="form-label">
+                                <h3>ប្រតិបត្តិព័ត៌មាន</h3>
+                            </label>
+                            <form action="" method="get">
+                                <input type="email" class="form-control " name="" id="" placeholder="Email address" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy-right d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none text-black text-center">Copyright© 2024 by ClimiX All right revrse
+            </a>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
