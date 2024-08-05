@@ -772,7 +772,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 :root {
@@ -2605,7 +2605,7 @@ textarea.form-control-lg {
 .form-floating > label {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   z-index: 2;
   height: 100%;
   padding: 1rem 0.75rem;
@@ -2662,7 +2662,7 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
-  transform: scale(0.85) translateY(-0.95rem) translateX(0.15rem);
+  transform: scale(0.85) translateY(-1rem) translateX(0.2rem);
   background-color: transparent;
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
@@ -2688,7 +2688,7 @@ textarea.form-control-lg {
 }
 .form-floating > .form-control:-webkit-autofill ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
-  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  transform: scale(0.85) translateY(-1.2rem) translateX(0.35rem);
 }
 .form-floating > .form-control-plaintext ~ label {
   border-width: var(--bs-border-width) 0;
@@ -2889,6 +2889,9 @@ textarea.form-control-lg {
   margin-top: 0.25rem;
   font-size: 0.875em;
   color: var(--bs-form-invalid-color);
+  position: absolute;
+  top: 15px;
+  left: 200px;
 }
 
 .invalid-tooltip {
@@ -3411,15 +3414,25 @@ textarea.form-control-lg {
 .dropdown-toggle {
   white-space: nowrap;
 }
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
+  font-family: 'Font Awesome 5 Free';
   content: "";
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+} */
+.dropdown-toggle::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  font-size: 13px;
+  top: 10px;
+  right: -8px;
 }
 .dropdown-toggle:empty::after {
   margin-left: 0;
