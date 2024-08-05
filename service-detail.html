@@ -9,216 +9,96 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Homepage</title>
     <style>
-        .about-us .wrapper {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
 
-        .about-us .wrapper .badge-1 {
-            width: 200px;
-            background-color: #F3C633;
-            outline: 5px solid #fff;
-            text-align: center;
-            padding: 5px;
-            position: absolute;
-            top: -45px;
-            left: -30px;
-            align-self: flex-start;
-        }
+    .service-detail .sidebar .nav-pills .nav-link {
+        color: black;
+        text-align: left;
+        margin-bottom: 20px;
+    }
 
-        .about-us .wrapper .badge-1 h3 {
-            font-size: 45px;
-            font-weight: bold;
-            margin-bottom: 0;
-        }
+    .service-detail .sidebar .nav-pills .nav-link.active {
+        color: white;
+        background-color: red !important;
+    }
 
-        .about-us .wrapper .badge-1 p {
-            font-weight: bold;
-            margin-bottom: 0;
-        }
+    .service-detail .content .intro {
+        position: relative;
+        color: red;
+        font-weight: 500;
+    }
 
-        .about-us .wrapper .badge-2 {
-            width: 300px;
-            background-color: #014221;
-            outline: 5px solid #fff;
-            padding: 20px;
-            align-self: flex-end;
-            position: absolute;
-            bottom: -50px;
-            right: -40px;
-        }
+    .service-detail .content .intro::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        width: 115px;
+        height: 1.5px;
+        background-color: red;
+    }
 
-        .about-us .wrapper .badge-2 h3 {
-            color: white;
-            font-size: 20px;
-            font-weight: 600;
-            font-style: italic;
-        }
+    .service-detail .content .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
-        .about-us .wrapper .badge-2 p {
-            color: #F3C633;
-            font-size: 14px;
-            margin-bottom: 0;
-        }
+    .service-detail .content ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-        .about-us .wrapper .badge-2 .icons {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            bottom: -75px;
-            right: 0;
-        }
-        
-        .about-us .wrapper .badge-2 .icons i {
-            font-size: 50px;
-            color: #F3C633;
-        }
+    .service-detail .content .item ul li {
+        font-size: 18px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 14px;
+    }
 
-        .about-us .wrapper .image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
+    .service-detail .content .list-item ul li {
+        border-top: 1px solid #ddd !important;
+        padding: 14px;
+    }
 
-        .about-us .content .title {
-            line-height: 50px;
-            font-weight: 700;
-            color: black;
-        }
+    .service-detail .content .card {
+        position: relative;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
 
-        .featured .card {
-            width: 100%;
-            height: auto;
-            color: #F3C633 !important;
-            background-color: #014221 !important;
-        }
+    .service-detail .content .card::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: green;
+        position: absolute;
+    }
 
-        @keyframes slide {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
+    .service-detail .content .card .card-header .badge {
+        position: absolute;
+        top: -33px;
+    }
 
-        .partners .logos {
-            overflow: hidden;
-            padding: 60px 0;
-            background: white;
-            white-space: nowrap;
-            position: relative;
-        }
+    .service-detail .content .card .card-header .badge i {
+        background-color: green;
+    }
 
-        .partners .logos:before,
-        .logos:after {
-            position: absolute;
-            top: 0;
-            width: 250px;
-            height: 100%;
-            content: "";
-            z-index: 2;
-        }
+    .service-detail .content .about-us .nav-pills .nav-link {
+        background-color: #ddd;
+        color: black;
+    }
 
-        .partners .logos:before {
-            left: 0;
-            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-        }
+    .service-detail .content .about-us .nav-pills .nav-link.active {
+        background-color: red;
+        color: white;
+    }
 
-        .partners .logos:after {
-            right: 0;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-        }
+    .service-detail .content .about-us .tab-content .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
-        .partners .logos:hover .logos-slide {
-            animation-play-state: paused;
-        }
-
-        .partners .logos-slide {
-            display: inline-block;
-            animation: 35s slide infinite linear;
-        }
-
-        .partners .logos-slide img {
-            height: 50px;
-            margin: 0 40px;
-        }
-
-        .management .image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .team .image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        @media (max-width: 1200px) {
-            .about-us .wrapper .badge-1 {
-                width: 250px;
-            }
-
-            .about-us .wrapper .badge-2 {
-                width: 350px;
-                right: -10px;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .about-us .wrapper .badge-1 {
-                width: 400px;
-            }
-
-            .about-us .wrapper .badge-2 {
-                width: 450px;
-                right: -19px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .about-us .wrapper .badge-1 {
-                width: 300px;
-            }
-
-            .about-us .wrapper .badge-2 {
-                width: 400px;
-                right: -10px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .about-us .wrapper {
-                padding: 0 25px;
-                margin: 40px 0;
-            }
-
-            .about-us .wrapper .badge-1 {
-                width: 250px;
-                left: 0;
-            }
-
-            .about-us .wrapper .badge-2 {
-                width: 350px;
-                right: 0;
-            }
-
-            .about-us .content {
-                padding: 0 20px;
-            }
-            
-            .about-us .content .btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
     </style>
 </head>
 
@@ -482,278 +362,240 @@
             <!-- <img src="assets/img/logo/logo.png" alt=""> -->
         </div>
 
-        <section class="about-us bg-white py-5">
-            <div class="container g-0">
-                <div class="row row-gap-5 g-0 py-5">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="wrapper me-xl-5">
-                            <div class="badge-1 text-black">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <h3 class="num" data-val="24"></h3>
-                                    <h3>+</h3>
-                                </div>
-                                <p>Year Experience</p>
-                            </div>
-                            <div class="image h-100">
-                                <img src="https://dkkit.rometheme.pro/diligent/wp-content/uploads/sites/100/2024/03/YKSR9RK.jpg" alt="">
-                            </div>
-                            <div class="badge-2">
-                                <h3>Pellentesque sit amet lectus consequat molestie. Nulla at nisl eleifend.</h3>
-                                <p>-Alex Thompson, CEO</p>
-                                <div class="icons">
-                                    <i class="fa-solid fa-quote-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="content ms-lg-5 ms-xl-5">
-                            <span class="mt-sm-5 mt-lg-0 d-block text-warning fw-semibold">About Diligent</span>
-                            <h2 class="title display-4 py-3">Our Vision for Cleaner Planet</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam leo. Nulla dui risus, congue in nisi quis, convallis maximus neque.</p>
-                            <div class="my-4">
-                                <div class="d-flex align-items-center my-3">
-                                    <div class="icons me-3">
-                                        <i class="fa-solid fa-earth-americas display-4 text-warning"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h4 class="fw-semibold text-black">Our Vision</h4>
-                                        <p class="mb-0">
-                                            We bring the right people together to challenge established thinking and drive transform in 2020
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center my-3">
-                                    <div class="icons me-3">
-                                        <i class="fa-solid fa-earth-americas display-4 text-warning"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h4 class="fw-semibold text-black">Our Vision</h4>
-                                        <p class="mb-0">
-                                            We bring the right people together to challenge established thinking and drive transform in 2020
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn-warning px-5 py-2 text-white rounded-0 my-3" role="button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured">
-            <div class="container py-5">
-                <span class="d-block text-warning fw-semibold text-center">Featured Service</span>
-                <h2 class="text-center text-black fw-semibold display-5 py-3">A wide range of waste <br> disposal services</h2>
-                <div class="row row-gap-5 flex-wrap">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="card p-3">
-                            <div class="card-body">
-                                <i class="fa-solid fa-dumpster display-3"></i>
-                                <h4 class="card-title py-3">Relieble Collection</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.
-                                </p>
-                                <a href="#" class="btn btn-warning px-5 py-2 text-black rounded-0 my-3" role="button">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 pt-5">
-                        <div class="card p-3">
-                            <div class="card-body">
-                                <i class="fa-solid fa-dumpster display-3"></i>
-                                <h4 class="card-title py-3">Relieble Collection</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.
-                                </p>
-                                <a href="#" class="btn btn-warning px-5 py-2 text-black rounded-0 my-3" role="button">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="card p-3">
-                            <div class="card-body">
-                                <i class="fa-solid fa-dumpster display-3"></i>
-                                <h4 class="card-title py-3">Relieble Collection</h4>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.
-                                </p>
-                                                                <a href="#" class="btn btn-warning px-5 py-2 text-black rounded-0 my-3" role="button">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="partners bg-white py-5">
-            <span class="d-block text-warning fw-semibold text-center">Our Partner</span>
-            <h2 class="text-center text-black fw-semibold display-5 pt-3">Our Collabrate Partner</h2>
-            <div class="logos">
-                <div class="logos-slide">
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/3m.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/barstool-store.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/budweiser.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/buzzfeed.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/forbes.svg"/>
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/macys.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/menshealth.svg" />
-                  <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/mrbeast.svg" />
-                </div>
-          
-                <div class="logos-slide">
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/3m.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/barstool-store.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/budweiser.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/buzzfeed.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/forbes.svg"  />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/macys.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/menshealth.svg" />
-                    <img src="https://raw.githubusercontent.com/Coding-with-Robby/infinite-logo-carousel/adb1f11a3736ae0b1df43d48bbbb7c1339a77b86/logos/mrbeast.svg" />
-                </div>
-              </div>
-        </section>
-
-        <section class="management bg-white py-5">
+        <section class="service-detail bg-white py-5">
             <div class="container">
-                <span class="d-block text-warning fw-semibold text-center">Our Management</span>
-                <h2 class="text-center text-black fw-semibold display-5 pt-3">Smart Solutions for <br> Waste and Recycling</h2>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus velit eget condimentum. Curabitur pharetra, urna ac tristique congue, orci orci hendrerit dolor, et vulputate metus dui ut justo.</p>
-                <div class="row align-items-center">
-                    <div class="col-xl-3">
-                        <div class="card border-0 mb-5">
-                            <div class="card-body m-0 p-0" style="text-align: right;">
-                                <i class="fa-solid fa-recycle display-4 text-warning"></i>
-                                <h4 class="card-title text-black fw-semibold py-3">Operations Management</h4>
-                                <p class="card-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                            </div>
-                        </div>
-                        <div class="card border-0">
-                            <div class="card-body m-0 p-0" style="text-align: right;">
-                                <i class="fa-solid fa-recycle display-4 text-warning"></i>
-                                <h4 class="card-title text-black fw-semibold py-3">Operations Management</h4>
-                                <p class="card-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="sidebar">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true">Waste Removal</button>
+                                <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false">Dumpster Rentals</button>
+                                <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false">On-Demand Collection</button>
+                                <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false">Zero Waste</button>
+                                <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">Techonology</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="image p-3 h-100">
-                            <img src="https://dkkit.rometheme.pro/diligent/wp-content/uploads/sites/100/2024/03/XDYR7JD.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="card border-0 mb-5">
-                            <div class="card-body m-0 p-0">
-                                <i class="fa-solid fa-recycle display-4 text-warning"></i>
-                                <h4 class="card-title text-black fw-semibold py-3">Operations Management</h4>
-                                <p class="card-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                            </div>
-                        </div>
-                        <div class="card border-0">
-                            <div class="card-body m-0 p-0">
-                                <i class="fa-solid fa-recycle display-4 text-warning"></i>
-                                <h4 class="card-title text-black fw-semibold py-3">Operations Management</h4>
-                                <p class="card-text m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="experience py-5">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <div class="counter-box d-flex justify-content-center align-items-center">
-                            <div class="icons me-3">
-                                <i class="fa-solid fa-earth-americas display-3 text-warning"></i>
-                            </div>
-                            <div class="wrapper d-flex align-items-center flex-column">
-                                <div class="number d-flex justify-content-center align-items-center mb-0">
-                                    <h3 class="num display-4 text-black fw-semibold p-0 m-0" data-val="24"></h3>
-                                    <h3 class="display-4 text-black fw-semibold p-0 m-0">+</h3>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab" tabindex="0">
+                                <div class="content">
+                                    <span class="intro d-block p-0 mb-3">INTRODUCTION</span>
+                                    <h1>Waste Removal Services</h1>
+                                    <div class="image my-5">
+                                        <img src="https://st.ourhtmldemo.com/new/Wastey/assets/images/services/service-d-1-1.png" alt="">
+                                    </div>
+                                    <p class="mb-3">
+                                        On the other hand, we denounce with righteous indignation dislike men who are so beguiled demoralized by the charms of pleasures of the moment, so blinded by desire that they cannot foresee the pain trouble that are bound to ensue and equal blame belongs to those who fail in their duty.
+                                    </p>
+                                    <h3 class="mb-3">
+                                        Our Reliable Services Includes
+                                    </h3>
+                                    <p>
+                                        The charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain & trouble that are bound to ensue; and equal blame belongs to those who fail in their duty.
+                                    </p>
+                                    <div class="row item my-4">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <ul class="fw-semibold">
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Recurring Waste & Recycling</li>
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Sustainability Education</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <ul class="fw-semibold">
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>Waste Diversion Reporting</li>
+                                                <li><i class="fa-solid fa-check text-danger me-3"></i>24/7 customer service</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="mb-3">Materials We Collected</h3>
+                                    <p>
+                                        Blinded by desire, that they cannot foresee the pain & trouble that are bound to ensue;
+                                    </p>
+                                    <div class="row row-gap-5 my-5">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="list-item">
+                                                <div class="card border-0">
+                                                    <div class="card-header bg-transparent border-0 p-4 pt-5 pb-0">
+                                                        <div class="badge">
+                                                            <i class="fa-solid fa-recycle text-white display-5 p-2 rounded-circle"></i>
+                                                        </div>
+                                                        <h4>Solid Waste</h4>
+                                                        <p>Converted into liquid form for disposal</p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Garbage
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Waste Tires
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furniture and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Scrap Metal
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furnitrure and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Appliances & Vehicles
+                                                            </li>
+                                                            <a href="#" class="btn fw-semibold fs-5" role="button">... More</a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="list-item">
+                                                <div class="card border-0">
+                                                    <div class="card-header bg-transparent border-0 p-4 pt-5 pb-0">
+                                                        <div class="badge">
+                                                            <i class="fa-solid fa-recycle text-white display-5 p-2 rounded-circle"></i>
+                                                        </div>
+                                                        <h4>Solid Waste</h4>
+                                                        <p>Converted into liquid form for disposal</p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Garbage
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Waste Tires
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furniture and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Scrap Metal
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Furnitrure and Toys
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa-solid fa-arrow-right-long text-danger me-3"></i>
+                                                                Appliances & Vehicles
+                                                            </li>
+                                                            <a href="#" class="btn fw-semibold fs-5" role="button">... More</a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="my-5">When You Refuse To Reuse It's Our Earth.</h3>
+                                    <div class="about-us">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row g-0">
+                                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active" id="pills-mission-tab" data-bs-toggle="pill" data-bs-target="#pills-mission" type="button" role="tab" aria-controls="pills-mission" aria-selected="true">Our Mission</button>
+                                                              </li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-vision-tab" data-bs-toggle="pill" data-bs-target="#pills-vision" type="button" role="tab" aria-controls="pills-vision" aria-selected="false">Our Vision</button>
+                                                              </li>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">Our History</button>
+                                                              </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content py-4" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission-tab" tabindex="0">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <h4>Recyling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab" tabindex="0">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h4>Recyling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                            <li><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab" tabindex="0">
+                                                 <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="image h-100">
+                                                            <img src="https://www.themetechmount.com/wordpress/wastii/wp-content/uploads/2022/05/tab-img3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <h4>Recycling</h4>
+                                                        <small classs="text-body-secondary">
+                                                            Recycling is a key component modern waste
+                                                            reducation and is the third component of the “Reduce, Reuse, and Recycle” waste  increase awareness.
+                                                        </small>
+                                                        <ul>
+                                                            <li class="mb-2"><i class="fa-solid fa-check text-white bg-danger rounded-circle me-3"></i>Reduce reuse recycle.</li>
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text">
-                                    <span>Year Experience</span>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <div class="counter-box d-flex justify-content-center align-items-center">
-                            <div class="icons me-3">
-                                <i class="fa-solid fa-earth-americas display-3 text-warning"></i>
-                            </div>
-                            <div class="wrapper d-flex align-items-center flex-column">
-                                <div class="number d-flex justify-content-center align-items-center mb-0">
-                                    <h3 class="num display-4 text-black fw-semibold p-0 m-0" data-val="9"></h3>
-                                    <h3 class="display-4 text-black fw-semibold p-0 m-0">k</h3>
-                                </div>
-                                <div class="text">
-                                    <span>Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <div class="counter-box d-flex justify-content-center align-items-center">
-                            <div class="icons me-3">
-                                <i class="fa-solid fa-earth-americas display-3 text-warning"></i>
-                            </div>
-                            <div class="wrapper d-flex align-items-center flex-column">
-                                <div class="number d-flex justify-content-center align-items-center mb-0">
-                                    <h3 class="num display-4 text-black fw-semibold p-0 m-0" data-val="520"></h3>
-                                    <h3 class="display-4 text-black fw-semibold p-0 m-0"></h3>
-                                </div>
-                                <div class="text">
-                                    <span>Project Done</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="counter-box d-flex justify-content-center align-items-center">
-                            <div class="icons me-3">
-                                <i class="fa-solid fa-earth-americas display-3 text-warning"></i>
-                            </div>
-                            <div class="wrapper d-flex align-items-center flex-column">
-                                <div class="number d-flex justify-content-center align-items-center mb-0">
-                                    <h3 class="num display-4 text-black fw-semibold p-0 m-0" data-val="225"></h3>
-                                    <h3 class="display-4 text-black fw-semibold p-0 m-0"></h3>
-                                </div>
-                                <div class="text">
-                                    <span>Collection Vehicles</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="team bg-white">
-            <div class="container py-5">
-                <span class="d-block text-warning fw-semibold text-center">Our Team</span>
-                <h2 class="text-center text-black fw-semibold display-5">Meet our creative team
-                </h2>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus velit eget condimentum. Curabitur pharetra, urna ac tristique congue, orci orci hendrerit dolor, et vulputate metus dui ut justo.</p>
-                <div class="row align-items-center">
-                    <div class="col-4">
-                        <div class="image h-100">
-                            <img src="https://htmldesigntemplates.com/html/ecoviron/images/team/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="image h-100">
-                            <img src="https://htmldesigntemplates.com/html/ecoviron/images/team/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="image h-100">
-                            <img src="https://htmldesigntemplates.com/html/ecoviron/images/team/1.jpg" alt="">
-                        </div>
+                            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab" tabindex="0">...</div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -893,23 +735,6 @@
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        let valueDisplays = document.querySelectorAll(".num");
-        let interval = 2500;
-
-        valueDisplays.forEach((valueDisplay) => {
-            let startValue = 0;
-            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-            let duration = Math.floor(interval / endValue);
-            let counter = setInterval(function() {
-                startValue += 1;
-                valueDisplay.textContent = startValue;
-                if (startValue == endValue) {
-                    clearInterval(counter);
-                }
-            }, duration);
-        });
-    </script>
 </body>
 
 </html>

@@ -130,9 +130,7 @@ header .search-lg .form-control{
     transform: translateY(55px);
     /* transition: 0.3s; */
 }
-main{
-    height: 200vh;
-}
+
 footer{
     max-width: 100%;
     min-height: 400px;
@@ -247,6 +245,7 @@ footer .footer-copy-right{
         left: 28px;
         color: var(--color-kellyGreen);
     }
+
     footer .footer-menu ul li a{
         color: black;
         line-height: 30px;
