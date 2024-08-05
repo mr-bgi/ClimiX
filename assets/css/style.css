@@ -130,9 +130,7 @@ header .search-lg .form-control{
     transform: translateY(55px);
     /* transition: 0.3s; */
 }
-main{
-    height: 200vh;
-}
+
 footer{
     max-width: 100%;
     min-height: 400px;
@@ -191,15 +189,621 @@ footer .footer-copy-right{
     width: 100%;
     height: 60px;
 }
+
+
+ /* seaklim */
+
+ .product-menu .navbar .btn{
+    width: 70%;
+ }
+ .product-menu .navbar .dropdown:hover .dropdown-menu{
+    display: block;
+ }
+
+ .product-menu .dropdown-menu{
+    width: 70%;
+    border-color: #ddd;
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+    transform: translateY(45px);
+}
+.product-menu .dropdown-menu::before{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+}
+.product-menu .dropdown-menu::after{
+    content: "";
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    top: -15px;
+    left: 10px;
+}
+.product-menu .dropdown-menu li{
+    padding-inline: 10px;
+    transition: 0.3s;
+}
+.product-menu .dropdown-menu .dropdown-item .img-item{
+    width: 10px;
+    height: 10px;
+}
+.product-menu .dropdown-menu .dropdown-item .img-item img{
+    width: 100%;
+    transform: scale(1.5);
+    filter: var(--filter-green);
+}
+.product-menu .dropdown-menu li .dropdown-item{
+    transition: 0.3s;
+}
+.product-menu .dropdown-menu li:hover{
+    background-color: var(--color-blueGreen);
+}
+.product-menu .dropdown-menu li:hover .dropdown-item{
+    color: white;
+    background: transparent;
+    transform: translateX(10px);
+}
+
+header .product-menu .menu-nav .nav-item{
+    /* width: 25%; */
+    border-radius: 18px;
+    text-align: center;
+    padding: 5px 40px;    
+    border: 1px solid #dfdfdf;
+}
+header .product-menu .menu-nav .nav-item .nav-link{
+    padding: 0;    
+}
+.product-menu .menu-nav .nav-item-active{
+    background-color: var(--color-blueGreen);
+    border-radius: 18px;
+    text-align: center;
+    padding: 5px 30px;
+    color: white;
+}
+.product-menu .menu-nav .nav-item-active a { 
+    color: white;
+}
+.product-menu .menu-nav .nav-item:hover{
+    background-color: var(--color-blueGreen);
+}
+.product-menu .menu-nav .nav-item:hover a{
+    color: white;
+}
+
+/* hero banner */
+
+/* .product-hero{
+    padding-top: 150px;
+}
+
+.product-hero .hero-left .product-ads,
+.product-hero .hero-right .product-ads{
+    width: 100%;
+    height: 36vh;
+}
+
+.product-hero .hero-left .product-ads:nth-child(1){
+    background-color: var(--color-neonGreen);
+}
+.product-hero .hero-mid .product-ads{
+    width: 100%;
+    height: calc(37vh*2);
+    overflow: hidden;
+}
+
+.product-hero .hero-left .product-ads .product-ads-content,
+.product-hero .hero-right .product-ads .product-ads-content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-hero .hero-left .product-ads .product-ads-content .image img,
+.product-hero .hero-right .product-ads .product-ads-content  .image img{
+    width: 100%;
+    object-fit: fill;
+    object-position: bottom;
+} */
+/* 
+.hero-banner{
+    width: 100%;
+    height: 75vh;
+    padding-top: 120px;
+    background: linear-gradient(to left, var(--color-blueGreen), #F3F3F3);
+}
+
+
+.hero-banner .hero-img img{ 
+    width: 100%;
+} */
+
+
+/* Profile Page */
+.profile-hero{
+    width: 100%;
+    background: linear-gradient(to left, var(--color-blueGreen), #F3F3F3);
+    height: 40vh;
+}
+.profile-hero img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: 100% 80%;
+}
+
+.main-profile .profile-navbar{
+    background-color: #F5F5F9;
+}
+
+.main-profile .profile-navbar .nav-pills .nav-link{
+    font-weight: bold;
+    color: #116530 ;
+}
+
+.main-profile .profile-navbar .nav-pills .nav-link.active{
+    font-weight: bold;
+    color: var(--color-blueGreen);
+    background-color: transparent !important;
+    border-bottom: 5px solid var(--color-blueGreen);
+    border-radius: 0;
+}
+.main-profile .profile-info .profile-img{
+    width: auto;
+}
+.main-profile .profile-info .profile-img img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+}
+
+.main-profile .profile-wrapper{
+    transform: translateY(-100px);
+}
+
+
+.profile-info .description .info img{
+    width: 18px;
+    height: 18px;
+}
+.profile-info .description .info p{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 5px;
+    margin: 0;
+}
+.profile-info .description .info.donation p{
+    color: var(--color-kellyGreen);
+}
+
+.main-profile .media .profile-img{
+    width: 10%;
+}
+
+.main-profile .media .post{
+    width: 90%;
+}
+
+.main-profile .media .profile-img .pf-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.main-profile .media .status p{
+    font-size: 17px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.main-profile .media .post .privacy a{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-blueGreen);
+    text-decoration: none;
+}
+.main-profile .media .post .privacy a img{
+    width: 12%;
+    height: 12%;
+}
+
+.text-active{
+    color: var(--color-blueGreen);
+    font-weight: bold;
+}
+
+
+.main-profile .media .donation-post .content-owner-profile .image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+}
+
+.main-profile .plan{
+    height: 100%;
+}
+
+.main-profile .plan-wrapper .trash-collect .progress{
+    height: 30px;
+}
+.main-profile .plan-wrapper .trash-collect .progress .progress-bar{
+    height: 30px;
+    background-color: var(--color-kellyGreen) !important;
+}
+.main-profile .plan-wrapper .trash-collect span{
+    color: var(--color-kellyGreen);
+    font-size: 15px;
+    font-weight: bold;
+}
+.main-profile .plan-wrapper .recycle-collect .progress{
+    height: 30px;
+}
+.main-profile .plan-wrapper .recycle-collect .progress .progress-bar{
+    height: 30px;
+    background-color: var(--color-green) !important;
+}
+.main-profile .plan-wrapper .recycle-collect span{
+    color: var(--color-green);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-green{
+    width: auto;
+    height: 30px;
+    border: none;
+    background-color: var(--color-blueGreen);
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-green:hover{
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-green);
+}
+
+.purchase-history .product .product-img{
+    width: 100px;
+    height: 100px;
+}
+.purchase-history .product .product-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* donation page */
+
+.donation-hero{
+    width: 100%;    
+    background: linear-gradient(to left, var(--color-blueGreen), #F3F3F3, var(--color-neonGreen));
+}
+.donation-hero .hero-wrapper{
+    background-image: url('../img/product/plant-growing-from-coins-glass-jar-blurred-nature.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.donation-hero .hero-wrapper .title h2{
+    text-shadow: 2px 2px 5px #00FF00;
+}
+
+.donation-insight{
+    width: 100%;
+    height: 65vh;
+    background-image: url('../img/background/green-paint-bg.png');
+}
+
+.donation-insight .title h1,
+.achievement-content h1{
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+.achievement-content img{
+    filter: var(--filter-green);
+}
+
+.reason{
+    background-image: url('../img/background/green-bg-3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    border-top: 50px solid transparent;
+    border-image: url('../img/background/leaf-border.png') 35% round;
+}
+.reason .image img{
+    border: 10px solid var(--color-kellyGreen);
+}
+.reason .paragraph{
+    word-wrap: break-word;
+    padding: 0 20px;
+} 
+.reason .paragraph p{
+    font-size: 21px !important;
+} 
+.reason .paragraph h1,
+.reason .image h1{
+    text-shadow: 2px 2px 5px #00FF00;
+}
+.reason .paragraph p{
+    color: var(--color-green);
+    font-size: 22px;
+}
+
+.donation-choice .card{
+    transition: 0.3s;
+}
+
+.donation-choice .card .card-img{
+    width: 100%;
+    height: 300px;
+}
+
+.donation-choice .title h2{
+    color: var(--color-green);
+}
+.donation-choice .title hr{
+    width: 150px;
+    border: 3px solid red;
+}
+
+.donation-choice .goal .progress.tree-planting{
+    height: 30px;
+    background-color: var(--color-neonGreen);
+}
+
+
+.donation-choice .goal .progress.tree-planting .progress-bar{
+    height: 30px;
+    background-color: var(--color-kellyGreen);
+}
+
+.donation-choice-card{
+    transition: 0.3s;
+}
+
+.donation-choice-card .card .description p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.donation-choice-card:hover,
+.donation-choice-card:hover .card{
+    background-color: var(--color-neonGreen) !important;
+    border: none !important;
+}
+
+.donation-choice-card:hover .progress{
+    background-color: white !important;
+    border: none !important;
+}
+
+.donation-choice-card:hover .card{
+    color: white;
+}
+
+.donation-rating{
+    background-image: url('../img/background/flower-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.donation-rating{
+    border-top: 50px solid transparent;
+    border-image: url('../img/background/leaf-border.png') 35% round;
+}
+
+
+.donation-rating .contact form{
+    top: 43%;
+}
+.donation-rating .contact form .form-control{
+    width: 40%;
+}
+
+/* donation-detail-page */
+
+.donation-detail-hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/environment-img/group-activists-friends-collecting-plastic-waste-beach-guys-show-thumb-up.jpg');
+    background-size: cover;
+    background-position: 60% ;
+    z-index: 0;
+}
+
+.donation-detail-hero .hero-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.donation-detail-hero .hero-wrapper .article{
+    height: 100vh;
+}
+.donation-detail-hero .hero-wrapper .article h1{
+    color: white;
+    text-shadow: 2px 2px 5px #00FF00;
+}
+.donation-form{
+    background-image: url('../img/background/green-paint-bg.png');
+    /* height: 89vh; */
+}
+
+.donation-form form{
+    background-color: #F2F0ED;
+    top: -180px;
+}
+
+.donation-form ul{
+    border-bottom: 2px solid var(--color-green);
+}
+.donation-form .nav-pills .nav-item .nav-link{
+    width: 100%;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: rgba(0, 128, 0, 0.4);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.donation-form .nav-pills .nav-item .nav-link.active{
+    width: 100%;
+    color: var(--color-green);
+    border-radius: 0 !important;
+    border-bottom: 5px solid var(--color-kellyGreen) !important;
+}
+.custom-tooltip{
+    --bs-tooltip-bg: white;
+    --bs-tooltip-color: var(--color-green);
+    box-shadow: 2px 2px 2px #ddd;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: bold;
+}
+
+.donation-form .form-select:focus{
+    box-shadow: 0 0 0 0.25rem var(--color-kellyGreen);
+    border: 0;
+}
+.donation-form .form-check-label{
+    width: 50%;
+    padding: 5px 0;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    border: 3px solid var(--color-green);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+.donation-form .form-check-input:checked ~ .form-check-label{
+    background-color: var(--color-blueGreen);
+    background-color: green;
+    color: white;
+}
+
+
+.donation-form .other-amount{
+    border: 3px solid var(--color-green);
+}
+.donation-form .other-amount .form-control{
+    outline: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+.donation-form .other-amount .form-control:focus{
+    box-shadow: 0 0 !important;
+    border: 0 !important;
+}
+
+.donation-form .other-amount label{
+    padding: 5px 10px;
+    line-height: 40px;
+    text-align: center;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-green);
+}
+
+.donation-form .form-check-other:checked ~ .form-check-label, .form-check-other{
+    display: none;
+}
+.donation-form .form-check-other:checked ~ .other-amount{
+    display: flex !important;
+}
+
+.donation-form .form-check-input:checked ~ .message{
+    display: block !important;
+}
+
+.donation-form .message textarea{
+    box-shadow: 0 0 0 0.25rem var(--color-kellyGreen) !important;
+    border: 0 !important;
+}
+.donation-form .btn-submit{
+    width: 45%;
+    padding: 5px 0;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--color-blueGreen);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.donation-form .btn-submit:disabled{
+    background-color: var(--color-neonGreen);
+    cursor: not-allowed;
+}
+
+.donation-form .information .image{
+    max-height: 90vh;
+}
+.donation-form .information .image img{
+    object-fit: cover;
+}
+.donation-form .information .article hr{
+    width: 150px;
+    border: 2px solid red;
+    column-span:all;
+}
+
+.donation-form .information .article{
+    column-count: 2;
+    column-gap: 30px;
+    word-break: break-all;
+}
+
+.donation-form .information .article h1{
+    color: var(--color-green);
+    column-span:all;
+}
+
+
 /* laptop */
 @media (max-width: 1200px) { 
-    header .nav-link, .breadcrumb-item{
-        font-size: 16px;
-    }
+    .product-menu .navbar .btn {
+        padding: 5px;
+     }
+     header .nav-link, .breadcrumb-item{
+         font-size: 16px;
+        }
     header .breadcrumb{
         display: none !important;
     }
- }
+    /* donation-page */
+    .donation-rating .contact form .form-control{
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    /* donation detail page */
+    .donation-form form{
+        left: 0;
+    }
+
+}
 
 /* Ipad-pro */
 @media (max-width: 992px) { 
@@ -218,7 +822,7 @@ footer .footer-copy-right{
         transform: translateY(0);
     }
     header .dropdown-menu::before{
-        display: none;
+        display: block;
     }
     header .dropdown-menu::after{
         display: none;
@@ -257,16 +861,247 @@ footer .footer-copy-right{
     footer .foot-icon{
         transform: translateY(-30px);
     }
+    
+    header .product-menu .menu-nav .nav-item,
+    header .product-menu .menu-nav .nav-item-active{
+        border-radius: 18px;
+        text-align: center;
+        padding: 5px 15px;
+    }
+    
+    
+    .product-menu .dropdown-menu{
+        border-color: #ddd;
+        box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        transform: translateY(40px);
+    }
+    
+    
+    /* profile-page */
+    .main-profile .profile-info .profile-img img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    .main-profile .profile-navbar{
+        padding: 0 !important;
+    }
+    .main-profile .profile-wrapper{
+        transform: translateY(-20px);
+        padding: 0 !important;
+    }
+    .main-profile .media .profile .profile-img .pf-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .main-profile .profile-navbar,
+    .main-profile .profile-info,
+    .main-profile .plan-wrapper,
+    .main-profile .plan-wrapper,
+    .main-profile .card{
+        box-shadow: none !important;
+    }
+    
+    /* donation-page */
+    .reason .paragraph p{
+        font-size: 17px !important;
+    }
+    .donation-choice .card .card-img{
+        height: 200px;
+    }
+    /* donation-page */
+    .donation-insight{
+        height: 55vh;
+    }
+    .donation-rating .contact form .form-control{
+        height: 20px;
+        font-size: 12px;
+    }
+    .donation-rating .contact form .btn-green{
+        font-size: 11px;
+        height: 20px;
+    }
 
- }
+    /* donation-detail page */
+    .donation-detail-hero{
+        height: 70vh;
+        background-position: top;
+    }
+    .donation-detail-hero .article{
+        height: 70vh !important;
+    }
+
+    .donation-form form{
+        top: -140px;
+        width: 100%;
+    }
+
+    .donation-form .information .image{
+        /* height: 40vh; */
+    }
+}
 
 /* Ipad-mini */
 @media (max-width: 768px) { 
+    .product-menu .dropdown-menu{
+        border-color: #ddd;
+        box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        transform: translateY(40px) translateX(70px);
+    }
     
+     header .product-menu .menu-nav .nav-item,
+     header .product-menu .menu-nav .nav-item-active
+     {
+           padding: 5px 10px; 
+     }
+
+     /* profile-page */
+     .main-profile .profile-info .profile-img img{
+        width: 20%;
+        height: 20%;
+    }
+
+     .main-profile .profile-navbar{
+        padding: 0 !important;
+     }
+     .main-profile .profile-wrapper{
+        transform: translateY(-20px);
+        padding: 0 !important;
+    }
+    .main-profile .media .profile .profile-img .pf-img {
+        width: 50px;
+        height: 50px;
+    }
+    .main-profile .media .post {
+        padding: 0 !important;
+    }
+    
+   /* donation-page */
+   .donation-insight{
+        height: 50vh;
+    }
+    .donation-choice .card .card-img{
+        height: 200px;
+    }
+
+    /* donation-detail-page */
+    .donation-detail-hero{
+        height: 60vh;
+    }
+    .donation-detail-hero .article{
+        height: 60vh !important;
+        justify-content: end !important;
+        padding-bottom: 40px ;
+    }
+    .donation-detail-hero .article h1{
+        font-size: 22px !important;
+    }
+    .donation-detail-hero .article p{
+        font-size: 16px !important;
+    }
+    .donation-form .nav-pills .nav-item .nav-link{
+        font-size: 16px;
+    }
+    .donation-form .form-check-label{
+        font-size: 14px;
+    }
+    .donation-form .other-amount label{
+        font-size: 14px;
+    }
+    .donation-form .btn-submit{
+        font-size: 16px;
+    }
+
+    .donation-form form{
+        top: -120px;
+    }
+
+    .donation-form .information .image{
+        /* height: 40vh; */
+    }
+
  }
 
 /* Smart-Phone */
 @media (max-width: 576px) { 
+    header .product-menu .menu-nav .nav-item,
+    header .product-menu .menu-nav .nav-item-active
+    {
+           padding: 5px 5px; 
+    }
+
+    /* profile-page */
+    .main-profile .profile-info .profile-img img{
+        width: 20%;
+        height: 20%;
+    }
+     
+    .main-profile .media .post{
+        padding-left: 25px !important;
+    }
+    .main-profile .media .post .username h5{
+        font-size: 15px;
+    }
+    
+    .main-profile .media .post .username span{
+        font-size: 13px;
+    }
+    .main-profile .media .post .post-date p{
+        font-size: 13px;
+    }
+    .main-profile .media .post .privacy a{
+        font-size: 11px;
+    }
+    .main-profile .profile-wrapper{
+        transform: translateY(0);
+        padding: 0 !important;
+    }
+    .main-profile {
+        transform: translateY(-40px);
+    }
+
+    /* donation-page */
+    .donation-hero .hero-wrapper{
+        background-position-x: 65%;
+    }
+
+    .achievement-content h1{
+        font-size: 20px;
+    }
+    .achievement-content p{
+        font-size: 16px !important;
+    }
+    .donation-choice .card .card-img{
+        height: 200px;
+    }
+
+    /* donation-detail-page */
+
+    
+    .donation-form .nav-pills .nav-item .nav-link{
+        font-size: 14px;
+    }
+    
+    .donation-form .btn-submit{
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .donation-form form{
+        left: 0;
+        width: 100%;
+    }
+    .donation-form form h3{
+        font-size: 20px !important;
+    }
+    .donation-form .information .image{
+        /* height: 40vh; */
+    }
+    
+    .donation-form .information .article p{
+        font-size: 16px  !important;
+    }
 
  }
 

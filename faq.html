@@ -1,1 +1,410 @@
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/Fontawesome/fontawesome.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top flex-nowrap" id="headbar">
+            <div class="container-lg">
+                <a class="navbar-brand order-0 me-0 d-lg-block" href="homepage.html" id="logo">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </a>
+                <form action="" method="get" class="collapse collapse-horizontal search-sm me-3" id="searchSM">
+                    <input type="text" name="search" class="form-control d-lg-none ps-5" placeholder="ស្វែងរក...">
+                </form>
+                <div class="head-group-item d-flex justify-content-between order-2">
+                    <button class="navbar-toggler order-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <img src="assets/img/icon/menu.png" class="w-100 object-fit-cover" alt="">
+                    </button>
+                    <div class="head-item d-flex align-items-center justify-content-end gap-3 order-1">
+                        <ol class="breadcrumb pt-3 d-none d-lg-flex">
+                            <li class="breadcrumb-item">ខ្មែរ</li>
+                            <li class="breadcrumb-item">En</li>
+                        </ol>
+                        <a href="#" class="text-success fs-5 d-lg-none" data-bs-toggle="collapse" data-bs-target="#searchSM">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-success fs-5 d-none d-lg-block" data-bs-toggle="collapse" data-bs-target="#searchBar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-success fs-5 d-none d-lg-block">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <div class="header-profile bg-success rounded-circle dropdown d-none d-lg-block" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://i.pinimg.com/236x/03/eb/d6/03ebd625cc0b9d636256ecc44c0ea324.jpg"
+                                class="w-100 h-100 object-fit-cover ">
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/user-gear.png" alt="">
+                                        </div>
+                                        <span>ការកំណត់</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/box.png" alt="">
+                                        </div>
+                                        <span>ចាកចេញ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/plant.png" alt="">
+                                        </div>
+                                        <span>រុក្ខជាតិ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                        <div class="img-item">
+                                            <img src="assets/img/icon/power.png" alt="">
+                                        </div>
+                                        <span>ចាកចេញ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <div class="profile-offCanvas d-flex align-items-center justify-content-center gap-3">
+                            <div class="profile-offCanva-img">
+                                <img src="https://i.pinimg.com/236x/03/eb/d6/03ebd625cc0b9d636256ecc44c0ea324.jpg"
+                                    alt="">
+                            </div>
+                            <a href="edit-profile.html" class="profile-offCanva-name text-decoration-none text-black">
+                                <h3 class="p-0">សារ័ត្ន តុលា</h3>
+                            </a>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link fs-head active" aria-current="page" href="#">ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head " href="product-main.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ផលិតផល
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/construction.png" alt="">
+                                            </div>
+                                            <span>សម្ភារៈសំណង់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/plant.png" alt="">
+                                            </div>
+                                            <span>រុក្ខជាតិ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/box.png" alt="">
+                                            </div>
+                                            <span>ផលិតផលនិរន្តរភាព</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/recycle.png" alt="">
+                                            </div>
+                                            <span>សម្ភារៈកែច្នៃ</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" href="service-main.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    សេវាកម្ម
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/planting.png" alt="">
+                                            </div>
+                                            <span>លម្អរុក្ខជាតិ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/recycle.png" alt="">
+                                            </div>
+                                            <span>រោងចក្រកែច្នៃ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/dumpster.png" alt="">
+                                            </div>
+                                            <span>ប្រមូលកាកសំណល់</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ប្រភព
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/eduction.png" alt="">
+                                            </div>
+                                            <span>ចំណេះដឹង</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/land-location.png" alt="">
+                                            </div>
+                                            <span>ផែនទី</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/blog-text.png" alt="">
+                                            </div>
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fs-head" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    សហគមន៍
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/donate.png" alt="">
+                                            </div>
+                                            <span>គាំទ្រសកម្មភាព</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex gap-3 m-0" href="#">
+                                            <div class="img-item">
+                                                <img src="assets/img/icon/competition.png" alt="">
+                                            </div>
+                                            <span>កម្មវិធីប្រកួតប្រជែង</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-head" href="contact-us.html">ទំនាក់ទំនង</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-head" href="about-us.html">អំពីខ្ញុំ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-footer py-4 px-3 d-flex gap-4 justify-content-center d-lg-none">
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/facebook.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/twitter.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/telegram.png" alt=""></a>
+                        </div>
+                        <div class="offcanvas-footer-img">
+                            <a href="#"><img src="assets/img/icon/whatsapp.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-lg collapse w-100 position-absolute top-0" id="searchBar">
+                <div
+                    class="card card-body d-flex flex-row align-items-end justify-content-center border-0 bg-transparent ">
+                    <form>
+                        <input type="text" class="form-control" name="" id="search" placeholder="ស្វែងរក" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-baner">
+            <!-- <img src="assets/img/logo/logo.png" alt=""> -->
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-menu pt-5">
+            <div class="container-fluid container-md">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-6 p-0 d-flex align-items-center align-items-lg-start flex-column border-footer">
+                        <div class="footer-menu-img">
+                            <img src="assets/img/logo/logo.png" class="w-100 object-fit-cover" alt="">
+                        </div>
+                        <div
+                            class=" d-flex flex-wrap align-content-center justify-content-center justify-content-lg-start">
+                            <p class="footer-decrition py-2 text-center text-lg-start w-100">
+                                "កម្ពុជា រួមគ្នាដើម្បីនិរន្តរភាពនៃភពផែនដី"
+                            </p>
+                            <div class="footer-email px-4 py-4 d-md-flex gap-5 mb-5 mb-lg-0">
+                                <a href="#" class="d-flex text-decoration-none text-white gap-2 border-footer pe-5">
+                                    <div class="footer-icon">
+                                        <img src="assets/img/icon/envelope.png" class="w-100 object-fit-cover" alt="">
+                                    </div>
+                                    <span>ClimiX24@gmail.com</span>
+                                </a>
+                                <a href="#" class="d-flex text-decoration-none text-white gap-2">
+                                    <div class="footer-icon">
+                                        <img src="assets/img/icon/phone-call.png" class="w-100 object-fit-cover" alt="">
+                                    </div>
+                                    <span>+855 988 3924</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group-footer-icon d-flex gap-3">
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/facebook.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/instagram.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/telegram.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/twitter.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="foot-icon">
+                                    <img src="assets/img/icon/whatsapp.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12  col-lg-6 d-flex gap-4 justify-content-center justify-content-lg-center flex-wrap p-0">
+                        <div class="d-flex gap-4 justify-content-start">
+                            <ul class="list-unstyled">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>តំណភ្ជាប់</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">កន្ត្រក</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">FAQ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">សហគមន៍</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ទំនាក់ទំនង</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">អំពីយើង</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <div class="menu-head d-flex gap-2 align-items-center justify-content-end">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>ផលិតផល</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">សម្ភារៈសំណង់</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">រុក្ខជាតិ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ផលិតផលនិរន្តរភាព</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">សម្ភារៈកែច្នៃ</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-5 justify-content-start">
+                            <ul class="list-unstyled d-lg-block">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>ប្រភព</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">ចំណេះដឹង</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ផែនទី</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">Blog</a></li>
+                            </ul>
+                            <ul class="list-unstyled  d-lg-block">
+                                <div class="menu-head d-flex gap-2 align-items-center">
+                                    <div class="icon-rotate">
+                                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h4>សេវាកម្ម</h4>
+                                </div>
+                                <li><a href="#" class="text-decoration-none ps-4">លម្អរុក្ខជាតិ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">រោងចក្រកែច្នៃ</a></li>
+                                <li><a href="#" class="text-decoration-none ps-4">ប្រមូលកាកសំណល់</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-3 w-100 d-flex flex-column justify-content-center align-items-center">
+                            <label for="" class="form-label">
+                                <h3>ប្រតិបត្តិព័ត៌មាន</h3>
+                            </label>
+                            <form action="" method="get">
+                                <input type="email" class="form-control " name="" id="" placeholder="Email address" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy-right d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none text-black text-center">Copyright© 2024 by ClimiX All right revrse
+            </a>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
