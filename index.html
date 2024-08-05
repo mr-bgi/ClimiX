@@ -5,69 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/Swiper Js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/libs/Owl Carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header class="position-sticky top-0 w-100" id="headbar">
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container">
+    <header class="position-fixed top-0 w-100" id="headbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-lg">
                 <a class="navbar-brand" id="logo" href="#">
                     <img src="assets/img/logo/logo.png" alt="">
                 </a>
-                <a href="#" class="land-modal d-md-none" role="button" data-bs-toggle="modal" data-bs-target="#landing">
+                <a href="sign-in.html" class="land-modal d-md-none" role="button">
                     <img src="assets/img/icon/user.png" class="w-100 object-fit-cover" alt="">
                 </a>
-                <div class="modal fade" id="landing" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0 d-flex justify-content-start">
-                                <a href="#" class="close-btn text-success" data-bs-dismiss="modal">
-                                    <i class="fa-solid fa-arrow-left fs-3"></i>
-                                </a>
-                            </div>
-                            <div class="modal-body pb-5">
-                                <a href="#" class="modal-header-img">
-                                    <img src="assets/img/logo/logo.png" class="w-100 object-fit-cover" alt="">
-                                </a>
-                                <h4 class="py-3 px-2">ចូលគណនី</h4>
-                                <form action="" method="get" class="mb-5">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" name="formId1" id="formId1"
-                                            placeholder="Email">
-                                        <label for="formId1">អ៊ីម៉ែល</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="formId1" id="formId1"
-                                            placeholder="Email"/>
-                                        <label for="formId1">លេខសម្ងាត់</label>
-                                        <a href="forget-password.html" class="text-decoration-none text-black">
-                                            <p class="text-end mt-1 pe-2">ភ្លេចពាក្យសម្ងាត់</p>
-                                        </a>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary w-100 py-2">ចូលគណនី</button>
-                                </form>
-                                <p class="text-center">-- ចូលគណនីតាម --</p>
-                                <div class="group-signin-icon d-flex justify-content-center gap-4">
-                                    <a  href="#" class="sign-icon">
-                                        <img src="assets/img/icon/google-color.png" alt="">
-                                    </a>
-                                    <a  href="#" class="sign-icon">
-                                        <img src="assets/img/icon/facebook-color.png" alt="">
-                                    </a>
-                                    <a  href="#" class="sign-icon">
-                                        <img src="assets/img/icon/twitter-color.png" alt="">
-                                    </a>
-                                </div>
-                                <a href="sign-up.html" class="text-decoration-none" role="button" data-bs-target="">
-                                    <p class="text-center mt-5"><span class="text-black">មិនទាន់មានគណនី? </span> បង្កើតគណនី <span class="text-black"></span></p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="gap-3 d-none d-md-flex">
                     <a role="button" href="sign-up.html" class="btn btn-warning text-white px-4">ចុះឈ្មោះ</a>
                     <a role="button" href="sign-in.html" class="btn btn-success px-4">ចូលគណនី</a>
@@ -76,9 +30,517 @@
         </nav>
     </header>
     <main>
+        <section class="hero-banner">
+            <div class="container-fluid p-0">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/background/hero-planting.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/background/sign-in-background-1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <div class="swiper-button-next custom-next"></div>
+                    <div class="swiper-button-prev custom-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+            </div>
+        </section>
+        <section class="landing-about py-5 bg-white">
+            <div class="container px-4">
+                <span
+                    class="badge text-success d-flex align-items-center justify-content-center gap-2 badge-custom p-0">
+                    <div class="badge-icon">
+                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover" alt="">
+                    </div>
+                    <span>អំពីយើង</span>
+                </span>
 
+                <div class="row gap-0">
+                    <div class="col-12 col-lg-6 p-0 pe-lg-2 mb-3">
+                        <h1 class="fw-bold pt-3 pb-1 ">រួមគ្នាលើកកម្ពស់ការគាំពារបរិស្ថានក្នុងសហគមន៍</h1>
+                        <p class="fs-5">
+                            យើងប្តេជ្ញាជំរុញអនាគតប្រកបដោយនិរន្តរភាព តាមរយៈដំណោះស្រាយប្រកបដោយភាពច្នៃប្រឌិត
+                            និងការចូលរួមសហគមន៍។
+                            ក្រុមដែលខិតខំប្រឹងប្រែងរបស់យើងធ្វើការដោយមិននឿយហត់ដើម្បីលើកកម្ពស់ការយល់ដឹងអំពីបរិស្ថាន
+                            តស៊ូមតិសម្រាប់គោលនយោបាយបៃតង និងអនុវត្តការអនុវត្តដែលមិនប៉ះពាល់ដល់បរិស្ថាន។
+                            តាមរយៈការរួមកម្លាំងគ្នា
+                            យើងអាចបង្កើតឥទ្ធិពលយូរអង្វែង និងធានាបាននូវភពដែលមានសុខភាពល្អសម្រាប់មនុស្សជំនាន់ក្រោយ។
+                        </p>
+                        <div class="landing-about-purpose">
+                            <div class="landing-about-item d-flex align-items-center">
+                                <div class="landing-about-item-icon ms-3">
+                                    <img src="assets/img/icon/checked.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </div>
+                            <div class="landing-about-item d-flex align-items-center">
+                                <div class="landing-about-item-icon ms-3">
+                                    <img src="assets/img/icon/checked.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </div>
+                            <div class="landing-about-item d-flex align-items-center">
+                                <div class="landing-about-item-icon ms-3">
+                                    <img src="assets/img/icon/checked.png" class="w-100 object-fit-cover" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex flex-column gap-3 p-0 pe-lg-2 ps-lg-2 mb-3">
+                        <div class="landing-about-img">
+                            <img src="assets/img/landing/about-nature.png" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="landing-about-img">
+                            <img src="assets/img/landing/landing-clean.png" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex flex-column justify-content-center p-0 ps-lg-2">
+                        <div class="landing-about-img">
+                            <img src="assets/img/landing/recycling.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-history py-5 bg-white">
+            <div class="container-md pb-5">
+                <span
+                    class="badge text-success d-flex align-items-center justify-content-center gap-2 badge-custom p-0">
+                    <div class="badge-icon">
+                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover" alt="">
+                    </div>
+                    <span>ប្រវត្តិ</span>
+                </span>
+                <h1 class="fw-bold mt-3">ប្រវត្តិរបស់ក្រុមហ៊ុន</h1>
+            </div>
+            <div class="container-fluid h-100">
+                <div class="owl-carousel owl-theme owl-loaded h-100">
+                    <div class="owl-stage-outer h-100">
+                        <div class="owl-stage h-100">
+                            <div class="owl-item">
+                                <div class="owl-item-head">
+                                    <p class="m-0 ps-4 ms-1 fs-5">2004</p>
+                                    <div class="owl-item-ruler ms-5"></div>
+                                </div>
+                                <div class="owl-item-body"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="owl-item-head">
+                                    <p class="m-0 ps-4 ms-1 fs-5">2010</p>
+                                    <div class="owl-item-ruler ms-5"></div>
+                                </div>
+                                <div class="owl-item-body"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="owl-item-head">
+                                    <p class="m-0 ps-4 ms-1 fs-5">2010</p>
+                                    <div class="owl-item-ruler ms-5"></div>
+                                </div>
+                                <div class="owl-item-body"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="owl-item-head">
+                                    <p class="m-0 ps-4 ms-1 fs-5">2010</p>
+                                    <div class="owl-item-ruler ms-5"></div>
+                                </div>
+                                <div class="owl-item-body"></div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="owl-item-head">
+                                    <p class="m-0 ps-4 ms-1 fs-5">2010</p>
+                                    <div class="owl-item-ruler ms-5"></div>
+                                </div>
+                                <div class="owl-item-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-service pt-5">
+            <div class="container d-flex justify-content-center mb-3">
+                <span
+                    class="badge text-success d-flex align-items-center justify-content-center gap-2 badge-custom p-0 ">
+                    <div class="badge-icon">
+                        <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover" alt="">
+                    </div>
+                    <span>សេវាកម្ម</span>
+                </span>
+            </div>
+            <div class="container-fluid p-0">
+                <h1 class="fw-bold text-center mb-5">ផ្តល់ជូននូវសេវាកម្មល្អដាច់គេក្នុងប្រទេស</h1>
+                <div class="landing-service-group mb-3">
+                    <div class="row g-3 g-lg-0">
+                        <div class="col-12 col-lg-4">
+                            <div class="landing-service-list d-flex flex-column justify-content-between">
+                                <div class="landing-service-item px-5 d-flex justify-content-start gap-4">
+                                    <div class="landing-service-item-img">
+                                        <img src="assets/img/icon/reuseable.png" class="w-100 h-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h2 class="fw-bold">ផលិតផលបរិស្ថាន</h2>
+                                </div>
+                                <div class="landing-service-item px-5 d-flex justify-content-start gap-4">
+                                    <div class="landing-service-item-img">
+                                        <img src="assets/img/icon/planting.png" class="w-100 h-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h2 class="fw-bold">ផលិតផលបរិស្ថាន</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-none d-lg-block">
+                            <div class="landing-service-fan position-relative">
+                                <div class="fan-head position-relative rounded-circle">
+                                    <img src="assets/img/prop/fan-head.png" class="w-100 h-100 object-fit-cover" alt="">
+                                </div>
+                                <div class="fan-body">
+                                    <img src="assets/img/prop/fan-body.png" class="h-100 object-fit-cover" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="landing-service-list d-flex flex-column justify-content-between">
+                                <div
+                                    class="landing-service-item px-5 d-flex justify-content-start justify-content-lg-end gap-4">
+                                    <div class="landing-service-item-img order-0 order-lg-1">
+                                        <img src="assets/img/icon/industry.png" class="w-100 h-100 object-fit-cover"
+                                            alt="">
+                                    </div>
+                                    <h2 class="fw-bold order-1 order-lg-0">ផលិតផលបរិស្ថាន</h2>
+                                </div>
+                                <div
+                                    class="landing-service-item px-5 d-flex justify-content-start justify-content-lg-end gap-4">
+                                    <div class="landing-service-item-img order-0 order-lg-1">
+                                        <img src="assets/img/icon/garbage-truck.png"
+                                            class="w-100 h-100 object-fit-cover" alt="">
+                                    </div>
+                                    <h2 class="fw-bold order-1 order-lg-0">ផលិតផលបរិស្ថាន</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing-service-detail pb-3">
+                    <div class="container-fluid">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="landing-service-detail-item p-3">
+                                    <h3 class="landing-service-detail-head ps-2">ផលិតផលបរិស្ថាន</h3>
+                                    <p class="text-white">
+                                        ផលិតផលបរិស្ថានរបស់យើងមានដូចជា បរិក្ខារសំណង់ដែលជួយកាត់បន្ថយកម្តៅ​
+                                        គ្រឿងអេឡិចត្រូនិចដែលផ្តល់ផលប៉ះពាក់តិច
+                                        និង សន្សំសំចៃ កូនឈើ ដំណាំលម្អ និង ផលិតផលនិរន្តរភាពដែលប្រើប្រាស់បានច្រើនដង។
+                                    </p>
+                                    <div class="landing-service-detail-img position-relative mb-5">
+                                        <img src="https://wordpress.zozothemes.com/ecohorbor/wp-content/uploads/sites/19/2022/06/portfolio5.jpg"
+                                            class="w-100 h-100 object-fit-cover" alt="">
+                                        <h1 class="landing-service-detail-number">01</h1>
+                                    </div>
+                                    <a href="#" class="cta-read-more-btn text-white position-relative">ព័ត៌មានលម្អិត</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="landing-service-detail-item p-3">
+                                    <h3 class="landing-service-detail-head ps-2">តុបតែងលម្អរុក្ខជាតិ</h3>
+                                    <p class="text-white">
+                                        ផលិតផលបរិស្ថានរបស់យើងមានដូចជា បរិក្ខារសំណង់ដែលជួយកាត់បន្ថយកម្តៅ​
+                                        គ្រឿងអេឡិចត្រូនិចដែលផ្តល់ផលប៉ះពាក់តិច
+                                        និង សន្សំសំចៃ កូនឈើ ដំណាំលម្អ និង ផលិតផលនិរន្តរភាពដែលប្រើប្រាស់បានច្រើនដង។
+                                    </p>
+                                    <div class="landing-service-detail-img position-relative mb-5">
+                                        <img src="https://images.squarespace-cdn.com/content/v1/609032a8c4f6661cab24fc11/1669403056537-06RUCR9J5GWZCYVW7XVF/ceec8af4-0ebd-4d83-b2e8-ebaec8f2a74b_rw_1920.jpg"
+                                            class="w-100 h-100 object-fit-cover" alt="">
+                                        <h1 class="landing-service-detail-number">02</h1>
+                                    </div>
+                                    <a href="#" class="cta-read-more-btn text-white position-relative">ព័ត៌មានលម្អិត</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="landing-service-detail-item p-3">
+                                    <h3 class="landing-service-detail-head ps-2">រោងចក្រកែច្នៃ</h3>
+                                    <p class="text-white">
+                                        ផលិតផលបរិស្ថានរបស់យើងមានដូចជា បរិក្ខារសំណង់ដែលជួយកាត់បន្ថយកម្តៅ​
+                                        គ្រឿងអេឡិចត្រូនិចដែលផ្តល់ផលប៉ះពាក់តិច
+                                        និង សន្សំសំចៃ កូនឈើ ដំណាំលម្អ និង ផលិតផលនិរន្តរភាពដែលប្រើប្រាស់បានច្រើនដង។
+                                    </p>
+                                    <div class="landing-service-detail-img position-relative mb-5">
+                                        <img src="https://www.packaging-gateway.com/wp-content/uploads/sites/16/2024/02/Republic-Services11.jpg"
+                                            class="w-100 h-100 object-fit-cover" alt="">
+                                        <h1 class="landing-service-detail-number">03</h1>
+                                    </div>
+                                    <a href="#" class="cta-read-more-btn text-white position-relative">ព័ត៌មានលម្អិត</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="landing-service-detail-item p-3 border-0">
+                                    <h3 class="landing-service-detail-head ps-2">រថយន្តប្រមូលសម្រាម</h3>
+                                    <p class="text-white">
+                                        ផលិតផលបរិស្ថានរបស់យើងមានដូចជា បរិក្ខារសំណង់ដែលជួយកាត់បន្ថយកម្តៅ​
+                                        គ្រឿងអេឡិចត្រូនិចដែលផ្តល់ផលប៉ះពាក់តិច
+                                        និង សន្សំសំចៃ កូនឈើ ដំណាំលម្អ និង ផលិតផលនិរន្តរភាពដែលប្រើប្រាស់បានច្រើនដង។
+                                    </p>
+                                    <div class="landing-service-detail-img position-relative mb-5">
+                                        <img src="https://tapinto-production.s3.amazonaws.com/uploads/photos/ga/best_crop_2c6abe7be1cf7af7c57f_mini_magick20231120-10942-e10cog.jpg?id=5083087"
+                                            class="w-100 h-100 object-fit-cover" alt="">
+                                        <h1 class="landing-service-detail-number">04</h1>
+                                    </div>
+                                    <a href="#" class="cta-read-more-btn text-white position-relative">ព័ត៌មានលម្អិត</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-blog py-5">
+            <div class="container-xl">
+                <div class="d-flex justify-content-center mb-3">
+                    <span
+                        class="badge text-success d-flex align-items-center justify-content-center gap-2 badge-custom p-0">
+                        <div class="badge-icon">
+                            <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover" alt="">
+                        </div>
+                        <span>Blog</span>
+                    </span>
+                </div>
+                <h1 class="fw-bold text-center mb-4">ស្វែងរកអត្ថបទព័ត៌មាន និង ប្លុកស្តីពីបរិស្ថាន</h1>
+                <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                        <div class="blog-card-group d-flex flex-wrap gap-3">
+                            <div class="blog-card-item-1 rounded-4 position-relative">
+                                <img src="https://dxchem.com.cn/wp-content/uploads/2018/03/Environmental-care.jpg"
+                                    class="w-100 h-100 object-fit-cover" alt="">
+                                <div class="blog-card-item-1-txt w-100 h-100 position-absolute top-0 p-3">
+                                    <p class="text-white">ថ្ងៃទី​ ១៨ កក្កដា ២០២៤</p>
+                                    <h3 class="text-white">ការទទួលយកការរស់នៅបៃតង៖ ចលនារីកចម្រើនឆ្ពោះទៅរកនិរន្តរភាព</h3>
+                                    <span class="text-white">
+                                        ក្នុងរយៈពេលប៉ុន្មានឆ្នាំចុងក្រោយនេះមានការផ្លាស់ប្តូរដ៏សំខាន់មួយឆ្ពោះទៅរកការទទួលយកការអនុវត្តដែលមិនប៉ះពាល់ដល់បរិស្ថាន
+                                        និងការទទួលយករបៀបរស់នៅប្រកបដោយនិរន្តរភាព។
+                                        និន្នាការសកលនេះត្រូវបានជំរុញដោយកត្តាផ្សេងៗគ្នា ចាប់ពីការកើនឡើង។
+                                    </span>
+                                    <div class="d-flex mt-1 mt-sm-5 mt-md-4 justify-content-between">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="blog-link-overlay-icon">
+                                                <img src="assets/img/icon/profile.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <span class="text-white">សារ័ត្ន​ តុលា</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-1">
+                                            <div class="blog-card-comment-icon">
+                                                <img src="assets/img/icon/blog-commentpng.png" alt=""
+                                                    class="w-100 h-100 object-fit-cover">
+                                            </div>
+                                            <span class="text-white">10 មតិ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="blog-link-overlay text-decoration-none d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <div class="blog-link-overlay-icon">
+                                        <img src="assets/img/icon/rounded-plus.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <h2 class="text-white">អានបន្ថែម</h2>
+                                </a>
+                            </div>
+                            <div class="blog-card-item-2 rounded-4 position-relative">
+                                <img src="" alt="">
+                                <a href="#"
+                                    class="blog-link-overlay text-decoration-none d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <div class="blog-link-overlay-icon">
+                                        <img src="assets/img/icon/rounded-plus.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <h2 class="text-white">អានបន្ថែម</h2>
+                                </a>
+                            </div>
+                            <div class="blog-card-item-2 rounded-4 position-relative"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="blog-card-group d-flex flex-wrap gap-3">
+                            <div class="blog-card-item-2 rounded-4 position-relative"></div>
+                            <div class="blog-card-item-2 rounded-4 position-relative"></div>
+                            <div class="blog-card-item-1 rounded-4 position-relative">
+                                <img src="https://img.huffingtonpost.com/asset/5ada441118000028003842c9.jpeg?cache=dUyxXq8xcy&ops=1778_1000"
+                                    class="w-100 h-100 object-fit-cover" alt="">
+                                <div class="blog-card-item-1-txt w-100 h-100 position-absolute top-0 p-3">
+                                    <p class="text-white">ថ្ងៃទី​ ១៨ កក្កដា ២០២៤</p>
+                                    <h3 class="text-white">ការទទួលយកការរស់នៅបៃតង៖ ចលនារីកចម្រើនឆ្ពោះទៅរកនិរន្តរភាព</h3>
+                                    <span class="text-white">
+                                        ក្នុងរយៈពេលប៉ុន្មានឆ្នាំចុងក្រោយនេះមានការផ្លាស់ប្តូរដ៏សំខាន់មួយឆ្ពោះទៅរកការទទួលយកការអនុវត្តដែលមិនប៉ះពាល់ដល់បរិស្ថាន
+                                        និងការទទួលយករបៀបរស់នៅប្រកបដោយនិរន្តរភាព។
+                                        និន្នាការសកលនេះត្រូវបានជំរុញដោយកត្តាផ្សេងៗគ្នា ចាប់ពីការកើនឡើង។
+                                    </span>
+                                    <div class="d-flex mt-1 mt-sm-5 mt-md-4 justify-content-between">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="blog-link-overlay-icon">
+                                                <img src="assets/img/icon/profile.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <span class="text-white">សារ័ត្ន​ តុលា</span>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-1">
+                                            <div class="blog-card-comment-icon">
+                                                <img src="assets/img/icon/blog-commentpng.png" alt=""
+                                                    class="w-100 h-100 object-fit-cover">
+                                            </div>
+                                            <span class="text-white">10 មតិ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="blog-link-overlay text-decoration-none d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <div class="blog-link-overlay-icon">
+                                        <img src="assets/img/icon/rounded-plus.png" class="w-100 h-100" alt="">
+                                    </div>
+                                    <h2 class="text-white">អានបន្ថែម</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-faq bg-white py-5">
+            <div class="container">
+                <div class="d-flex justify-content-center mb-3">
+                    <span
+                        class="badge text-success d-flex align-items-center justify-content-center gap-2 badge-custom p-0">
+                        <div class="badge-icon">
+                            <img src="assets/img/icon/planet-earth.png" class="w-100 object-fit-cover" alt="">
+                        </div>
+                        <span>Blog</span>
+                    </span>
+                </div>
+                <h1 class="fw-bold text-center mb-4">សំណួរដែលសួរញឹកញាប់</h1>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="accordion mb-3" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span
+                                            class="faq-question">តើ​ផលិតផល​អ្វីខ្លះ​​គាំទ្រ​ដល់​និរន្តរភាព​បរិស្ថាន?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span
+                                            class="faq-question">តើសេវាកម្មអ្វីខ្លះដែលជួយកាត់បន្ថយផលប៉ះពាល់ចំពោះលើបរិស្ថាន?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span
+                                            class="faq-question">តើ​ក្រុមហ៊ុន​របស់​អ្នក​មាន​សកម្មភាព​អ្វី​ខ្លះ​ក្នុង​ការ​ប្រយុទ្ធ​ប្រឆាំង​នឹង​ការ​ប្រែប្រួល​អាកាសធាតុ?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span
+                                            class="faq-question">តើយុវជនអាចចូលរួមក្នុងសកម្មភាពបរិស្ថានតាមរយៈក្រុមហ៊ុនរបស់អ្នកយ៉ាងដូចម្តេច?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="landing-faq-img">
+                            <img src="assets/img/landing/faq-sec.png" alt="" class="h-100 w-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-donation py-5">
+            <div class="container-md h-100">
+                <div class="row h-100">
+                    <div class="col-12 col-md-6 d-flex align-items-center h-100">
+                        <div class="donation-form rounded-3">
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="donation-info">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="landing-contact py-5">
+            <div class="container d-flex flex-column">
+                <div class="landing-map mb-3 order-1 order-lg-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62539.41496438536!2d104.81709024863281!3d11.572389100000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951001c8a7b55%3A0xa95ff42ea192073c!2sANT%20Technology%20Training%20School%202!5e0!3m2!1sen!2skh!4v1722394758319!5m2!1sen!2skh"
+                        style="border:0; width:100%; height: 400px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="landing-contact-info order-0 order-lg-1 mb-3">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                            <div class="card contact-detail"></div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card contact-detail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="mt-5 d-none">
         <div class="footer-menu pt-5">
             <div class="container-fluid container-md">
                 <div class="row">
@@ -210,6 +672,9 @@
         </div>
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/jQuery/jquery.min.js"></script>
+    <script src="assets/libs/Owl Carousel/owl.carousel.min.js"></script>
+    <script src="assets/libs/Swiper Js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
